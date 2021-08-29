@@ -247,19 +247,34 @@ h1, h2, h3, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../img/ondontologia.jpg);
-  background-blend-mode: color;
-  background-color: rgba(29, 30, 31, 0.685);
+  background: url(../img/odontologia.png);
+  background-blend-mode: soft-light;
+  background-color: rgba(11, 5, 8, 0.877);
   background-size: cover;
-  background-position-x: left;
-  background-position-y: top;
+  background-attachment: fixed;
   margin-right: 0;
-  padding: 40px 0;
+  padding: 50px 0;
 }
 
 .sobre > h2 {
   margin-bottom: 50px;
   color: #96e4f0;
+}
+
+.sobre___hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sobre___hr___items {
+  margin-right: 30px;
+  height: 80%;
+  width: 1px;
+  background-color: #f3efef;
 }
 
 .sobre___container {
@@ -269,6 +284,7 @@ h1, h2, h3, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-right: 10px #141414;
   color: #f3efef;
 }
 
@@ -276,6 +292,7 @@ h1, h2, h3, p {
   text-align: center;
   margin-right: 75px;
   margin-left: 75px;
+  width: 300px;
 }
 
 .sobre___container___items:first-child {
@@ -288,9 +305,12 @@ h1, h2, h3, p {
 }
 
 .sobre___container___items > p {
-  max-width: 400px;
+  max-width: 300px;
   margin-top: 20px;
   font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 1.7rem;
+  font-weight: 300;
 }
 
 .sobre___container___items > ul {
@@ -300,9 +320,41 @@ h1, h2, h3, p {
 
 .sobre___container___items > ul li {
   list-style-type: disc;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 1.7rem;
+  font-weight: 300;
 }
 
 .sobre___container___items > ul li:not(:last-child) {
   padding-bottom: 5px;
+}
+
+.historia {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.historia___container {
+  max-width: 50vw;
+  text-align: justify;
+}
+
+.historia___container p {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.historia___container p:not(:last-child) {
+  padding-bottom: 2vh;
 }
 /*# sourceMappingURL=style.css.map */

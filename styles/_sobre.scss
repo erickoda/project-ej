@@ -4,24 +4,39 @@
     flex-direction: column;
     align-items: center;
 
-    background: url(../img/ondontologia.jpg);
-    background-blend-mode: color;
+    //BG do Sobre com parallax
+    background: url(../img/odontologia.png);
+    background-blend-mode: soft-light;
     background-color: $transparent-dark-gray;
     background-size: cover;
-    background-position-x: left;
-    background-position-y: top;
+    background-attachment: fixed;
 
     margin-right: 0;
-    padding: 40px 0;
+    padding: 50px 0;
 
     > h2{
         margin-bottom: 50px;
         color: $lighter-blue;
     }
 
+    &___hr{
+
+        display: flex;
+        align-items: center;
+
+        &___items{
+            //display: block;
+            margin-right: 30px;
+            height: 80%;
+            width: 1px;
+            background-color: $white;
+        }
+    }
+
     &___container{
         display: flex;
         justify-content: center;
+        border-right: 10px $black;
 
         color: $white;
 
@@ -31,6 +46,7 @@
             margin-right: 75px;
             margin-left: 75px;
 
+            width: 300px;
             //missao
             &:first-child{
                 border-right: 6px $white;
@@ -42,9 +58,13 @@
             }
 
             > p{
-                max-width: 400px;
+                max-width: 300px;
                 margin-top: 20px;
                 font-size: 1.2rem;
+                
+                letter-spacing: 2px;
+                line-height: 1.7rem;
+                font-weight: 300;
             }
 
             > ul{
@@ -53,6 +73,11 @@
 
                 li{
                     list-style-type: disc;
+                    font-size: 1.2rem;
+
+                    letter-spacing: 2px;
+                    line-height: 1.7rem;
+                    font-weight: 300;
                     &:not(:last-child){
                         padding-bottom: 5px;
                     }

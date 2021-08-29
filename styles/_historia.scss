@@ -1,0 +1,22 @@
+.historia{
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &___container{
+        max-width: 50vw;
+        text-align: justify;
+
+        p{
+            font-size: 1.125rem;
+            font-weight: 300;
+            //font-family: 'Roboto', sans-serif;
+            &:not(:last-child){
+                padding-bottom: 2vh;
+            }
+        }
+    }
+
+}
