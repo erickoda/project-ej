@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +9,24 @@
     <!--Roboto font import-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-
+    <!--Import CSS-->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
 
-    <header class = "header">
-        <div class="header___container">
+
+    <!--Menu e carousel-->
+    <header class = "header" id = "header">
+
+        <div class="header___img___container">
+            <!--<h3>"Frase motivacional foda"</h3>
+            <p>Complemento não tão foda</p>-->
+        </div>
+
+
+        <nav class="header___container">
 
             <div class="header___logo">
                 <a href="#"><img src="./img/logo.svg" alt="logo"></a>
@@ -29,39 +38,99 @@
                 <span></span>
             </a>
 
-            <nav class="header___menu hide-for-mobile">
+            <div class="header___menu hide-for-mobile">
                 <ul>
                     <li>
-                        <a href="#" class="header___menu___content">Inicio</a>
+                        <a href="#header" class="header___menu___content">INICIO</a>
                     </li>
                     <li>
-                        <a href="#" class="header___menu___content">Tratamentos</a>
+                        <a href="#tratamentos" class="header___menu___content">TRATAMENTOS</a>
                     </li>
                     <li>
-                        <a href="#" class="header___menu___content">Sobre</a>
+                        <a href="#" class="header___menu___content">SOBRE</a>
                     </li>
                     <li>
-                        <a href="#" class="header___menu___content">História</a>
+                        <a href="#" class="header___menu___content">HISTÓRIA</a>
                     </li>
                     <li>
-                        <a href="#" class="header___menu___content">Localização</a>
+                        <a href="#" class="header___menu___content">LOCALIZAÇÕES</a>
                     </li>
                     <li>
-                        <a href="#" class="header___menu___content">Consultório</a>
+                        <a href="#" class="header___menu___content">CONSULTÓRIO</a>
                     </li>
                     <li>
-                        <a href="#" class="header___menu___content">Contato</a>
+                        <a href="#" class="header___menu___content">CONTATO</a>
                     </li>
                     <li class="header___menu___li">
                         <a href="#" class="header___menu___button"><img src="./img/whatsapp-logo-2020.svg" alt="logo whatsapp"></a>
                     </li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
 
-
-        </div>
     </header>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ea at, quaerat pariatur non omnis unde, consequatur sit mollitia quibusdam illum maxime molestias in nostrum, a incidunt voluptate saepe maiores!</p>
+
+    <!--Nossos tratamentos-->
+    <section class="tratamentos container-margin" id="tratamentos">
+        <h2 class="subtitles">NOSSOS TRATAMENTOS</h2>
+
+        <div class="tratamentos___items">
+            <div class="tratamentos___items___container">
+                <img src="./img/tratamentos_clareamento.svg" alt="tratamento do tipo clareamento">
+                <h3>Clareamento</h3>
+            </div>
+
+            <div class="tratamentos___items___container">
+                <img src="./img/tratamentos_clareamento.svg" alt="tratamento do tipo clareamento">
+                <h3>Clareamento</h3>
+            </div>
+
+            <div class="tratamentos___items___container">
+                <img src="./img/tratamentos_clareamento.svg" alt="tratamento do tipo clareamento">
+                <h3>Clareamento</h3>
+            </div>
+
+            <div class="tratamentos___items___container">
+                <img src="./img/tratamentos_clareamento.svg" alt="tratamento do tipo clareamento">
+                <h3>Clareamento</h3>
+            </div>
+
+            <div class="tratamentos___items___container">
+                <img src="./img/tratamentos_clareamento.svg" alt="tratamento do tipo clareamento">
+                <h3>Clareamento</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Sobre-->
+    <section class="sobre container-margin">
+        <h2 class="subtitles">SOBRE O CONSULTÓRIO</h2>
+        <main class="sobre___container">
+            <div class="sobre___container___missao sobre___container___items">
+                <h3>MISSÃO</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Repellat praesentium sequi doloremque doloribus quos 
+                    necessitatibus vel laudantium eos maiores, accusamus deleniti? 
+                    Doloribus assumenda corporis corrupti ipsam, culpa officiis perspiciatis 
+                    iure!
+                </p>
+            </div>
+
+            <div class="sobre___container___valores sobre___container___items">
+                <h3>VALORES</h3>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                </ul>
+            </div>
+        </main>
+    </section>
+   
 </body>
 </html>

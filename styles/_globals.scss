@@ -21,6 +21,24 @@ body{
     }
 }
 
+h1, h2, h3, p{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.subtitles{
+    letter-spacing: 1px;
+    font-size: 2rem;
+    color: $light-blue;
+    margin-bottom: 30px;
+}
+
+.container-margin{
+    margin: 50px 50px 100px 0;
+}
+
 
 .hide-for-mobile{
     @include mobile($max-width){
@@ -33,3 +51,4 @@ body{
         display: none;
     }
 }
+
