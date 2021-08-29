@@ -28,7 +28,7 @@ h1, h2, h3, p {
 .subtitles {
   letter-spacing: 1px;
   font-size: 2rem;
-  color: #62b5c2;
+  color: #70c7d4;
   margin-bottom: 30px;
 }
 
@@ -56,9 +56,9 @@ h1, h2, h3, p {
 }
 
 .header nav {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
   left: 0;
 }
 
@@ -104,13 +104,13 @@ h1, h2, h3, p {
 
 .header___menu___content:hover {
   font-size: larger;
-  color: #62b5c2;
+  color: #70c7d4;
 }
 
 .header___menu___button img {
   height: 60px;
   padding: 15px;
-  background-color: #62b5c2;
+  background-color: #70c7d4;
   border-radius: 30%;
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
@@ -220,7 +220,7 @@ h1, h2, h3, p {
   transition: background-color 0.5s, -webkit-transform 1s;
   transition: transform 1s, background-color 0.5s;
   transition: transform 1s, background-color 0.5s, -webkit-transform 1s;
-  background: #62b5c2;
+  background: #70c7d4;
   border-radius: 50%;
 }
 
@@ -247,10 +247,19 @@ h1, h2, h3, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url(../img/ondontologia.jpg);
+  background-blend-mode: color;
+  background-color: rgba(29, 30, 31, 0.685);
+  background-size: cover;
+  background-position-x: left;
+  background-position-y: top;
+  margin-right: 0;
+  padding: 40px 0;
 }
 
 .sobre > h2 {
   margin-bottom: 50px;
+  color: #96e4f0;
 }
 
 .sobre___container {
@@ -260,10 +269,17 @@ h1, h2, h3, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #f3efef;
 }
 
 .sobre___container___items {
   text-align: center;
+  margin-right: 75px;
+  margin-left: 75px;
+}
+
+.sobre___container___items:first-child {
+  border-right: 6px #f3efef;
 }
 
 .sobre___container___items > h3 {
@@ -273,5 +289,20 @@ h1, h2, h3, p {
 
 .sobre___container___items > p {
   max-width: 400px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.sobre___container___items > ul {
+  text-align: left;
+  padding: 0;
+}
+
+.sobre___container___items > ul li {
+  list-style-type: disc;
+}
+
+.sobre___container___items > ul li:not(:last-child) {
+  padding-bottom: 5px;
 }
 /*# sourceMappingURL=style.css.map */

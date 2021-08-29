@@ -4,28 +4,60 @@
     flex-direction: column;
     align-items: center;
 
+    background: url(../img/ondontologia.jpg);
+    background-blend-mode: color;
+    background-color: $transparent-dark-gray;
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: top;
+
+    margin-right: 0;
+    padding: 40px 0;
+
     > h2{
         margin-bottom: 50px;
+        color: $lighter-blue;
     }
 
     &___container{
         display: flex;
         justify-content: center;
 
+        color: $white;
+
         &___items{
             
             text-align: center;
+            margin-right: 75px;
+            margin-left: 75px;
+
+            //missao
+            &:first-child{
+                border-right: 6px $white;
+            }
 
             > h3{
                 font-weight: 900;
                 font-size: 1.5rem;
             }
 
-            >p{
+            > p{
                 max-width: 400px;
+                margin-top: 20px;
+                font-size: 1.2rem;
+            }
 
+            > ul{
+                text-align: left;
+                padding: 0;
+
+                li{
+                    list-style-type: disc;
+                    &:not(:last-child){
+                        padding-bottom: 5px;
+                    }
+                }
             }
         }
     }
-
 }
