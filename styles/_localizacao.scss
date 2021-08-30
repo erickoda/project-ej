@@ -1,0 +1,36 @@
+.localizacao{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &___container{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &___endereco{
+            display: flex;
+            margin-right: 100px;
+            
+
+            &___text{
+                padding-bottom: 1.5rem;
+                padding-left: 1.5rem;
+            }
+            &___icon{
+                //padding-right: 20px;
+                width: 50px;
+            }
+        }
+
+        &___mapa{
+            width: 99vw;
+            > iframe{
+                width: 99vw;
+                height: 50vh;
+            }
+        }
+    }
+}

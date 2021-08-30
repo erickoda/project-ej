@@ -33,7 +33,7 @@ h1, h2, h3, p {
 }
 
 .container-margin {
-  margin: 3.125rem 3.125rem 6.25rem 0;
+  margin: 3.125rem 0 6.25rem 0;
 }
 
 @media (max-width: 1310px) {
@@ -389,5 +389,56 @@ h1, h2, h3, p {
 
 .historia___container p:not(:last-child) {
   padding-bottom: 2vh;
+}
+
+.localizacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.localizacao___container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.localizacao___container___endereco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 100px;
+}
+
+.localizacao___container___endereco___text {
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.localizacao___container___endereco___icon {
+  width: 50px;
+}
+
+.localizacao___container___mapa {
+  width: 99vw;
+}
+
+.localizacao___container___mapa > iframe {
+  width: 99vw;
+  height: 50vh;
 }
 /*# sourceMappingURL=style.css.map */
