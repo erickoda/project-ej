@@ -19,7 +19,7 @@
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        padding: 20px 30px;
+        padding: 0.8rem 1.875rem;
         height: 13vh;
         //background: $white;
 
@@ -30,7 +30,7 @@
     &___logo {
 
         img{
-            width: 150px;
+            width: 9.375rem;
         }
     }
 
@@ -43,7 +43,7 @@
 
         ul > li{
             &:not(:first-child){
-                padding-left: 30px;
+                padding-left: 1.875rem;
             }
         }
 
@@ -73,15 +73,15 @@
         &___button{
             
             img{
-                height: 60px;
-                padding: 15px;
+                height: 3.75rem;
+                padding: 0.9375rem;
                 background-color: $light-blue;
                 border-radius: 30%;
 
                 transition: height 0.3s;
 
                 &:hover{
-                    height: 65px;
+                    height: 4.0625rem;
                 }
                 
             }
@@ -93,12 +93,12 @@
         > span{
             display: block;
 
-            height: 4px;
-            width: 25px;
+            height: 0.25rem;
+            width: 1.5625rem;
             background: $white;
 
             &:not(:last-child){
-                margin-bottom: 5px;
+                margin-bottom: 0.3125rem;
             }
         }
     }

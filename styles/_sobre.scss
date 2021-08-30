@@ -30,6 +30,13 @@
             height: 80%;
             width: 1px;
             background-color: $white;
+
+            @include mobile($change-flex-tratamento){
+                margin: 0;
+                height: 1px;
+                width: 100%;
+            }
+            
         }
     }
 
@@ -37,8 +44,13 @@
         display: flex;
         justify-content: center;
         border-right: 10px $black;
-
         color: $white;
+
+
+        @include mobile($change-flex-tratamento){
+            flex-direction: column;
+            justify-items: center;
+        }
 
         &___items{
             
@@ -47,9 +59,9 @@
             margin-left: 75px;
 
             width: 300px;
-            //missao
-            &:first-child{
-                border-right: 6px $white;
+
+            @include mobile($change-flex-tratamento){
+                margin: 75px 0 75px 0;
             }
 
             > h3{

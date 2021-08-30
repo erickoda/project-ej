@@ -73,12 +73,12 @@ h1, h2, h3, p {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 20px 30px;
+  padding: 0.8rem 1.875rem;
   height: 13vh;
 }
 
 .header___logo img {
-  width: 150px;
+  width: 9.375rem;
 }
 
 .header___menu ul {
@@ -91,7 +91,7 @@ h1, h2, h3, p {
 }
 
 .header___menu ul > li:not(:first-child) {
-  padding-left: 30px;
+  padding-left: 1.875rem;
 }
 
 .header___menu___content {
@@ -108,8 +108,8 @@ h1, h2, h3, p {
 }
 
 .header___menu___button img {
-  height: 60px;
-  padding: 15px;
+  height: 3.75rem;
+  padding: 0.9375rem;
   background-color: #70c7d4;
   border-radius: 30%;
   -webkit-transition: height 0.3s;
@@ -117,18 +117,18 @@ h1, h2, h3, p {
 }
 
 .header___menu___button img:hover {
-  height: 65px;
+  height: 4.0625rem;
 }
 
 .header___hamburger > span {
   display: block;
-  height: 4px;
-  width: 25px;
+  height: 0.25rem;
+  width: 1.5625rem;
   background: #f3efef;
 }
 
 .header___hamburger > span:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 .header___img___container {
@@ -277,6 +277,14 @@ h1, h2, h3, p {
   background-color: #f3efef;
 }
 
+@media (max-width: 1100px) {
+  .sobre___hr___items {
+    margin: 0;
+    height: 1px;
+    width: 100%;
+  }
+}
+
 .sobre___container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,6 +296,16 @@ h1, h2, h3, p {
   color: #f3efef;
 }
 
+@media (max-width: 1100px) {
+  .sobre___container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
+  }
+}
+
 .sobre___container___items {
   text-align: center;
   margin-right: 75px;
@@ -295,8 +313,10 @@ h1, h2, h3, p {
   width: 300px;
 }
 
-.sobre___container___items:first-child {
-  border-right: 6px #f3efef;
+@media (max-width: 1100px) {
+  .sobre___container___items {
+    margin: 75px 0 75px 0;
+  }
 }
 
 .sobre___container___items > h3 {
@@ -347,6 +367,12 @@ h1, h2, h3, p {
 .historia___container {
   max-width: 50vw;
   text-align: justify;
+}
+
+@media (max-width: 1100px) {
+  .historia___container {
+    max-width: 70vw;
+  }
 }
 
 .historia___container p {

@@ -9,6 +9,10 @@
         max-width: 50vw;
         text-align: justify;
 
+        @include mobile($change-flex-tratamento){
+            max-width: 70vw;
+        }
+
         p{
             font-size: 1.125rem;
             font-weight: 300;
