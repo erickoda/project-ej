@@ -10,6 +10,11 @@
     align-items: center;
     text-align: center;
 
+    @include mobile ($change-flex-tratamento){
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     &___items{
 
         display: flex;
@@ -27,18 +32,18 @@
 
         &___container{
 
-            margin: 30px 100px 0 100px;
+            margin: 1.875rem 6.25rem 0 6.25rem;
 
             /*@include mobile ($change-flex-tratamento){
                 margin: 10px 0 20px 0;
             }*/
 
             img{
-                height: 90px;
-                width: 90px;
-                padding: 15px;
+                height: 5.625rem;
+                width: 5.625rem;
+                padding: 0.9375rem;
 
-                margin-bottom: 10px;
+                margin-bottom: 0.625rem;
 
                 transition: transform 1s, background-color 0.5s;
 
@@ -54,7 +59,7 @@
 
             h3{
                 font-weight: 300;
-                letter-spacing: 1px;
+                letter-spacing: 0.0625rem;
                 font-size: 1.5rem;
             }
         }

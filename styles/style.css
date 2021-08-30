@@ -26,14 +26,14 @@ h1, h2, h3, p {
 }
 
 .subtitles {
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   font-size: 2rem;
   color: #70c7d4;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .container-margin {
-  margin: 50px 50px 100px 0;
+  margin: 3.125rem 3.125rem 6.25rem 0;
 }
 
 @media (max-width: 1310px) {
@@ -179,6 +179,13 @@ h1, h2, h3, p {
   text-align: center;
 }
 
+@media (max-width: 1100px) {
+  .tratamentos {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .tratamentos___items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,17 +212,17 @@ h1, h2, h3, p {
 }
 
 .tratamentos___items___container {
-  margin: 30px 100px 0 100px;
+  margin: 1.875rem 6.25rem 0 6.25rem;
   /*@include mobile ($change-flex-tratamento){
                 margin: 10px 0 20px 0;
             }*/
 }
 
 .tratamentos___items___container img {
-  height: 90px;
-  width: 90px;
-  padding: 15px;
-  margin-bottom: 10px;
+  height: 5.625rem;
+  width: 5.625rem;
+  padding: 0.9375rem;
+  margin-bottom: 0.625rem;
   -webkit-transition: background-color 0.5s, -webkit-transform 1s;
   transition: background-color 0.5s, -webkit-transform 1s;
   transition: transform 1s, background-color 0.5s;
@@ -232,7 +239,7 @@ h1, h2, h3, p {
 
 .tratamentos___items___container h3 {
   font-weight: 300;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   font-size: 1.5rem;
 }
 
@@ -253,11 +260,11 @@ h1, h2, h3, p {
   background-size: cover;
   background-attachment: fixed;
   margin-right: 0;
-  padding: 50px 0;
+  padding: 3.125rem 0;
 }
 
 .sobre > h2 {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   color: #96e4f0;
 }
 
@@ -271,16 +278,16 @@ h1, h2, h3, p {
 }
 
 .sobre___hr___items {
-  margin-right: 30px;
+  margin-right: 1.875rem;
   height: 80%;
-  width: 1px;
+  width: 0.0625rem;
   background-color: #f3efef;
 }
 
 @media (max-width: 1100px) {
   .sobre___hr___items {
     margin: 0;
-    height: 1px;
+    height: 0.0625rem;
     width: 100%;
   }
 }
@@ -292,7 +299,7 @@ h1, h2, h3, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-right: 10px #141414;
+  border-right: 0.625rem #141414;
   color: #f3efef;
 }
 
@@ -308,14 +315,14 @@ h1, h2, h3, p {
 
 .sobre___container___items {
   text-align: center;
-  margin-right: 75px;
-  margin-left: 75px;
-  width: 300px;
+  margin-right: 4.6875rem;
+  margin-left: 4.6875rem;
+  width: 18.75rem;
 }
 
 @media (max-width: 1100px) {
   .sobre___container___items {
-    margin: 75px 0 75px 0;
+    margin: 4.6875rem 0 4.6875rem 0;
   }
 }
 
@@ -325,10 +332,10 @@ h1, h2, h3, p {
 }
 
 .sobre___container___items > p {
-  max-width: 300px;
-  margin-top: 20px;
+  max-width: 18.75rem;
+  margin-top: 1.25rem;
   font-size: 1.2rem;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   line-height: 1.7rem;
   font-weight: 300;
 }
@@ -341,13 +348,13 @@ h1, h2, h3, p {
 .sobre___container___items > ul li {
   list-style-type: disc;
   font-size: 1.2rem;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   line-height: 1.7rem;
   font-weight: 300;
 }
 
 .sobre___container___items > ul li:not(:last-child) {
-  padding-bottom: 5px;
+  padding-bottom: 0.3125rem;
 }
 
 .historia {
@@ -365,18 +372,18 @@ h1, h2, h3, p {
 }
 
 .historia___container {
-  max-width: 50vw;
+  max-width: 60vw;
   text-align: justify;
 }
 
 @media (max-width: 1100px) {
   .historia___container {
-    max-width: 70vw;
+    max-width: 80vw;
   }
 }
 
 .historia___container p {
-  font-size: 1.125rem;
+  font-size: 1.15rem;
   font-weight: 300;
 }
 

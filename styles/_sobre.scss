@@ -12,10 +12,10 @@
     background-attachment: fixed;
 
     margin-right: 0;
-    padding: 50px 0;
+    padding: 3.125rem 0;
 
     > h2{
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
         color: $lighter-blue;
     }
 
@@ -26,14 +26,14 @@
 
         &___items{
             //display: block;
-            margin-right: 30px;
+            margin-right: 1.875rem;
             height: 80%;
-            width: 1px;
+            width: 0.0625rem;
             background-color: $white;
 
             @include mobile($change-flex-tratamento){
                 margin: 0;
-                height: 1px;
+                height: 0.0625rem;
                 width: 100%;
             }
             
@@ -43,7 +43,7 @@
     &___container{
         display: flex;
         justify-content: center;
-        border-right: 10px $black;
+        border-right: 0.625rem $black;
         color: $white;
 
 
@@ -55,13 +55,13 @@
         &___items{
             
             text-align: center;
-            margin-right: 75px;
-            margin-left: 75px;
+            margin-right: 4.6875rem;
+            margin-left: 4.6875rem;
 
-            width: 300px;
+            width: 18.75rem;
 
             @include mobile($change-flex-tratamento){
-                margin: 75px 0 75px 0;
+                margin: 4.6875rem 0 4.6875rem 0;
             }
 
             > h3{
@@ -70,11 +70,11 @@
             }
 
             > p{
-                max-width: 300px;
-                margin-top: 20px;
+                max-width: 18.75rem;
+                margin-top: 1.25rem;
                 font-size: 1.2rem;
                 
-                letter-spacing: 2px;
+                letter-spacing: 0.125rem;
                 line-height: 1.7rem;
                 font-weight: 300;
             }
@@ -87,11 +87,11 @@
                     list-style-type: disc;
                     font-size: 1.2rem;
 
-                    letter-spacing: 2px;
+                    letter-spacing: 0.125rem;
                     line-height: 1.7rem;
                     font-weight: 300;
                     &:not(:last-child){
-                        padding-bottom: 5px;
+                        padding-bottom: 0.3125rem;
                     }
                 }
             }

@@ -6,15 +6,15 @@
     align-items: center;
 
     &___container{
-        max-width: 50vw;
+        max-width: 60vw;
         text-align: justify;
 
         @include mobile($change-flex-tratamento){
-            max-width: 70vw;
+            max-width: 80vw;
         }
 
         p{
-            font-size: 1.125rem;
+            font-size: 1.15rem;
             font-weight: 300;
             //font-family: 'Roboto', sans-serif;
             &:not(:last-child){
