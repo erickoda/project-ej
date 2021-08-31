@@ -30,6 +30,7 @@ h1, h2, h3, p {
   font-size: 2rem;
   color: #70c7d4;
   margin-bottom: 1.875rem;
+  text-align: center;
 }
 
 .container-margin {
@@ -137,8 +138,8 @@ h1, h2, h3, p {
   background-color: rgba(29, 30, 31, 0.548);
   background-size: cover;
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,7 +359,6 @@ h1, h2, h3, p {
 }
 
 .historia {
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -421,7 +421,6 @@ h1, h2, h3, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 100px;
 }
 
 .localizacao___container___endereco___text {
@@ -440,5 +439,22 @@ h1, h2, h3, p {
 .localizacao___container___mapa > iframe {
   width: 99vw;
   height: 50vh;
+  border: 0;
+}
+
+.consultorio___container {
+  width: 674.66px;
+  height: 450px;
+}
+
+.consultorio___container___slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500%;
+}
+
+.consultorio___container___slides img {
+  height: 450px;
 }
 /*# sourceMappingURL=style.css.map */

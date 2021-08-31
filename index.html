@@ -18,11 +18,9 @@
 
 
     <!--Menu e carousel-->
-    <header class = "header" id = "header">
+    <header class="header" id="header">
 
         <div class="header___img___container">
-            <!--<h3>"Frase motivacional foda"</h3>
-            <p>Complemento não tão foda</p>-->
         </div>
 
 
@@ -56,7 +54,7 @@
                         <a href="#localizacao" class="header___menu___content">LOCALIZAÇÕES</a>
                     </li>
                     <li>
-                        <a href="#" class="header___menu___content">CONSULTÓRIO</a>
+                        <a href="#consultorio" class="header___menu___content">CONSULTÓRIO</a>
                     </li>
                     <li>
                         <a href="#" class="header___menu___content">CONTATO</a>
@@ -137,6 +135,7 @@
         </main>
     </section>
 
+    <!--História-->
     <section class="historia container-margin" id="historia">
 
         <h2 class="subtitles">HISTÓRIA</h2>
@@ -174,6 +173,7 @@
     </section>
 
     
+    <!--Localização-->
     <section class="localizacao container-margin" id="localizacao">
         <h2 class="subtitles">LOCALIZAÇÃO</h2>
 
@@ -181,15 +181,50 @@
             <div class="localizacao___container___endereco">
                 <div class="localizacao___container___endereco___icon"><img src="./img/icon-map.svg" alt="icone do mapa"></div>
                 <div class="localizacao___container___endereco___text">
-                    <h3 class="cidade">PAULÍNIA, SP</h3>
-                    <p>Av. Pref. José Lozano Araújo 1551</p>
-                    <p>Bairro Parque Brasil 500</p>
-                    <p>CEP 13141-901</p>
+                    <h3 class="cidade">São Paulo, SP</h3>
+                    <p>R. Quararibéia, 300</p>
+                    <p>Bairro Vila Isa</p>
+                    <p>CEP 04689-160</p>
                 </div>
             </div>
 
             <div class="localizacao___container___mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1300.543111706772!2d-47.15916363223373!3d-22.784248111889458!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bfc17d604457%3A0x28bde877e60f4c51!2sPrefeitura%20de%20Paul%C3%ADnia!5e0!3m2!1spt-BR!2sbr!4v1630330332920!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.5373364547875!2d-46.69156932433409!3d-23.67061659962254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce503d09a0d063%3A0x1cc22e2011b72412!2sR.%20Quararib%C3%A9ia%2C%20300%20-%20Vila%20Isa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004689-160!5e0!3m2!1spt-BR!2sbr!4v1630361424422!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--Consultório-->
+    <section class="consultorio container-margin" id="consultorio">
+        <h2 class="subtitles">CONSULTÓRIO</h2>
+        <div class="consultorio___container">
+            <div class="consultorio___container___slides">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="consultorio___container___slides___slide first">
+                    <img src="./img/consultorio_carousel_1.jpg" alt="">
+                </div>
+                <div class="consultorio___container___slides___slide second">
+                    <img src="./img/consultorio_carousel_2.jpg" alt="">
+                </div>
+                <div class="consultorio___container___slides___slide third">
+                    <img src="./img/consultorio_carousel_3.jpg" alt="">
+                </div>
+
+                <div class="consultorio___container___slides___navagation___auto">
+                    <div class="consultorio___slides___navagation___auto___btn1"></div>
+                    <div class="consultorio___slides___navagation___auto___btn2"></div>
+                    <div class="consultorio___slides___navagation___auto___btn3"></div>
+                </div>
+
+                <div class="consultorio___container___slides___manual">
+                    <label for="radio1" class="consultorio___slides___manual___btn"></label>
+                    <label for="radio2" class="consultorio___slides___manual___btn"></label>
+                    <label for="radio3" class="consultorio___slides___manual___btn"></label>
+                </div>
             </div>
         </div>
     </section>

@@ -1,0 +1,19 @@
+.consultorio{
+    
+    &___container{
+        width: 674.66px;
+        height: 450px;
+        //overflow: hidden;
+
+        &___slides{
+                display: flex;
+                //justify-content: center;
+                width: 500%;
+                //449.77
+            img{
+                height: 450px;
+            }
+
+        }
+    }
+}
