@@ -13,6 +13,8 @@
 
         &___redes-sociais{
 
+            padding-bottom: 200px;
+
             &___items{
                 display: flex;
                 flex-direction: row;
@@ -34,6 +36,45 @@
             &___items{
                 display: flex;
                 flex-direction: column;
+
+                &:not(:last-child){
+                    padding-bottom: 20px;
+                }
+
+                > label{
+                    font-weight: 700;
+                }
+
+                > input{
+                    font-size: 40px;
+                    width: 400px;
+                    height: 60px;
+                }
+
+                > textarea{
+                    height: 60px;
+                }
+
+                &___submit{
+                    margin-left: 100px;
+                    border: none;
+                    height: 50px;
+                    width: 200px;
+                    border-radius: 50px;
+                    background-color: $light-blue;
+
+                    font-size: 25px;
+                    color: $white;
+                    font-weight: 600;
+                    text-transform: uppercase;
+
+                    transition: all 1s;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $dark-blue;
+                    }
+                }
             }
         }
     }

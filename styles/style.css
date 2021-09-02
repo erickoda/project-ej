@@ -540,6 +540,10 @@ h1, h2, h3, h4, p {
   color: white;
 }
 
+.contatos___container___redes-sociais {
+  padding-bottom: 200px;
+}
+
 .contatos___container___redes-sociais___items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -570,5 +574,43 @@ h1, h2, h3, h4, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.contatos___container___forms___items:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.contatos___container___forms___items > label {
+  font-weight: 700;
+}
+
+.contatos___container___forms___items > input {
+  font-size: 40px;
+  width: 400px;
+  height: 60px;
+}
+
+.contatos___container___forms___items > textarea {
+  height: 60px;
+}
+
+.contatos___container___forms___items___submit {
+  margin-left: 100px;
+  border: none;
+  height: 50px;
+  width: 200px;
+  border-radius: 50px;
+  background-color: #70c7d4;
+  font-size: 25px;
+  color: #f3efef;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contatos___container___forms___items___submit:hover {
+  cursor: pointer;
+  background-color: #245f68;
 }
 /*# sourceMappingURL=style.css.map */
