@@ -613,7 +613,7 @@ h1, h2, h3, h4, p {
 }
 
 .contatos___container___forms___items > textarea {
-  height: 60px;
+  height: 120px;
 }
 
 @media (max-width: 800px) {
