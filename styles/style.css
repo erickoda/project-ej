@@ -10,12 +10,12 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
-  color: #141414;
+  color: #1a1919;
 }
 
 body a {
   text-decoration: none;
-  color: #141414;
+  color: #1a1919;
 }
 
 body ul li {
@@ -302,7 +302,7 @@ h1, h2, h3, h4, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-right: 0.625rem #141414;
+  border-right: 0.625rem #1a1919;
   color: #f3efef;
 }
 
@@ -523,7 +523,7 @@ h1, h2, h3, h4, p {
 }
 
 .contatos {
-  background-color: #141414;
+  background-color: #1a1919;
 }
 
 .contatos h2 {
@@ -537,7 +537,10 @@ h1, h2, h3, h4, p {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f3efef;
 }
 
 .contatos___container___redes-sociais {
@@ -555,6 +558,7 @@ h1, h2, h3, h4, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #f3efef;
 }
 
 .contatos___container___redes-sociais___items:not(:last-child) {
