@@ -547,8 +547,10 @@ h1, h2, h3, h4, p {
   }
 }
 
-.contatos___container___redes-sociais {
-  padding-bottom: 200px;
+@media (max-width: 800px) {
+  .contatos___container___redes-sociais {
+    padding-bottom: 100px;
+  }
 }
 
 .contatos___container___redes-sociais___items {
@@ -571,7 +573,7 @@ h1, h2, h3, h4, p {
 }
 
 .contatos___container___redes-sociais___items:not(:last-child) {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .contatos___container___forms___items {
