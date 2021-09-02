@@ -195,39 +195,92 @@
     </section>
 
     <!--Consultório-->
+    <!--
     <section class="consultorio container-margin" id="consultorio">
         <h2 class="subtitles">CONSULTÓRIO</h2>
-        <div class="consultorio___container">
-            <div class="consultorio___container___slides">
+        <div class="geral">
+            <div class="consultorio___container">
+                <div class="consultorio___container___slides">
 
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
 
-                <div class="consultorio___container___slides___slide first">
-                    <img src="./img/consultorio_carousel_1.jpg" alt="">
-                </div>
-                <div class="consultorio___container___slides___slide second">
-                    <img src="./img/consultorio_carousel_2.jpg" alt="">
-                </div>
-                <div class="consultorio___container___slides___slide third">
-                    <img src="./img/consultorio_carousel_3.jpg" alt="">
-                </div>
+                    <div class="consultorio___container___slides___slide first">
+                        <img src="./img/consultorio_carousel_1.jpg" alt="">
+                    </div>
+                    <div class="consultorio___container___slides___slide">
+                        <img src="./img/consultorio_carousel_2.jpg" alt="">
+                    </div>
+                    <div class="consultorio___container___slides___slide">
+                        <img src="./img/consultorio_carousel_3.jpg" alt="">
+                    </div>
 
-                <div class="consultorio___container___slides___navagation___auto">
-                    <div class="consultorio___slides___navagation___auto___btn1"></div>
-                    <div class="consultorio___slides___navagation___auto___btn2"></div>
-                    <div class="consultorio___slides___navagation___auto___btn3"></div>
-                </div>
+                    <div class="consultorio___container___slides___navagation___auto">
+                        <div class="consultorio___slides___navagation___auto___btn1"></div>
+                        <div class="consultorio___slides___navagation___auto___btn2"></div>
+                        <div class="consultorio___slides___navagation___auto___btn3"></div>
+                    </div>
 
-                <div class="consultorio___container___slides___manual">
-                    <label for="radio1" class="consultorio___slides___manual___btn"></label>
-                    <label for="radio2" class="consultorio___slides___manual___btn"></label>
-                    <label for="radio3" class="consultorio___slides___manual___btn"></label>
+                    <div class="consultorio___container___slides___manual">
+                        <label for="radio1" class="consultorio___container___slides___manual___btn"></label>
+                        <label for="radio2" class="consultorio___container___slides___manual___btn"></label>
+                        <label for="radio3" class="consultorio___container___slides___manual___btn"></label>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    -->
+
+    <!--Footer-->
+    <footer class="contatos" id="contatos">
+        <h2 class="subtitles">CONTATOS</h2>
+        <div class="contatos___container">
+            <div class="contatos___container___redes-sociais">
+                <div class="contatos___container___redes-sociais___items">
+                    <a href="#"><img src="./img/insta_logo.png" alt=""></a>
+                    <h4>Email</h4>
+                </div>
+                <div class="contatos___container___redes-sociais___items">
+                    <a href="#"><img src="./img/insta_logo.png" alt=""></a>
+                    <h4>Telefone</h4>
+                </div>
+                <div class="contatos___container___redes-sociais___items">
+                    <a href="#"><img src="./img/insta_logo.png" alt=""></a>
+                    <h4>Endereço</h4>
+                </div>
+                <div class="contatos___container___redes-sociais___items">
+                    <a href="https://instatram.com/"><img src="./img/insta_logo.png" alt="logo instagram"></a>
+                    <h4>Instagram</h4>
+                </div>
+            </div>
+
+            <forms class = "contatos___container___forms" action="form.php" method="get">
+                <div class="contatos___container___forms___items">
+                    <label>Nome</label>
+                    <input type="text" placeholder="Ex. Erick">
+                </div>
+
+                <div class="contatos___container___forms___items">
+                    <label>Email</label>
+                    <input type="email"  placeholder="contato@mail.com">
+                </div>
+
+                <div class="contatos___container___forms___items">
+                    <label>Telefone/Celular</label>
+                    <input type="tel">
+                </div>
+
+                <div class="contatos___container___forms___items">
+                    <label>Mensagem</label>
+                    <textarea name="forms"></textarea>
+                </div>
+
+                <input type="submit">
+            </forms>
+        </div>
+    </footer>
 
    
 </body>
