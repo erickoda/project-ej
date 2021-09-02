@@ -1,10 +1,5 @@
 .tratamentos{
 
-    
-    //margin: 80px 400px 0px 500px;
-    //margin-top: 40px;
-    //margin-top: 80px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +16,6 @@
         justify-content: center;
         flex-wrap: wrap;
         width: 70vw;
-        //width: 1100;
 
         @include mobile ($change-flex-tratamento){
             flex-direction: column;
@@ -33,10 +27,6 @@
         &___container{
 
             margin: 1.875rem 6.25rem 0 6.25rem;
-
-            /*@include mobile ($change-flex-tratamento){
-                margin: 10px 0 20px 0;
-            }*/
 
             img{
                 height: 5.625rem;
