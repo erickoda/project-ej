@@ -524,6 +524,7 @@ h1, h2, h3, h4, p {
 
 .contatos {
   background-color: #1a1919;
+  padding-bottom: 100px;
 }
 
 .contatos h2 {
@@ -541,6 +542,15 @@ h1, h2, h3, h4, p {
       -ms-flex-align: center;
           align-items: center;
   color: #f3efef;
+}
+
+@media (max-width: 800px) {
+  .contatos___container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .contatos___container___redes-sociais {
@@ -561,13 +571,13 @@ h1, h2, h3, h4, p {
   color: #f3efef;
 }
 
-.contatos___container___redes-sociais___items:not(:last-child) {
-  padding-bottom: 20px;
-}
-
-.contatos___container___redes-sociais img {
+.contatos___container___redes-sociais___items img {
   height: 50px;
   margin-right: 20px;
+}
+
+.contatos___container___redes-sociais___items:not(:last-child) {
+  padding-bottom: 20px;
 }
 
 .contatos___container___forms___items {
@@ -578,6 +588,14 @@ h1, h2, h3, h4, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .contatos___container___forms___items {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .contatos___container___forms___items:not(:last-child) {
@@ -594,8 +612,20 @@ h1, h2, h3, h4, p {
   height: 60px;
 }
 
+@media (max-width: 800px) {
+  .contatos___container___forms___items > input {
+    width: 70vw;
+  }
+}
+
 .contatos___container___forms___items > textarea {
   height: 60px;
+}
+
+@media (max-width: 800px) {
+  .contatos___container___forms___items > textarea {
+    width: 70vw;
+  }
 }
 
 .contatos___container___forms___items___submit {
@@ -611,6 +641,12 @@ h1, h2, h3, h4, p {
   text-transform: uppercase;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+@media (max-width: 800px) {
+  .contatos___container___forms___items___submit {
+    margin: 0;
+  }
 }
 
 .contatos___container___forms___items___submit:hover {
