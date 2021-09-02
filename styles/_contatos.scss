@@ -43,6 +43,10 @@
 
         //FORMULÁRIO
         &___forms{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
         
             &___items{
                 display: flex;
@@ -72,6 +76,7 @@
                 }
 
                 > textarea{
+                    width: 400px;
                     height: 120px;
 
                     @include mobile(800px){
@@ -80,7 +85,6 @@
                 }
 
                 &___submit{
-                    margin-left: 100px;
                     border: none;
                     height: 50px;
                     width: 200px;
@@ -93,10 +97,6 @@
                     text-transform: uppercase;
 
                     transition: all 1s;
-
-                    @include mobile(800px){
-                        margin: 0;
-                    }
 
                     &:hover{
                         cursor: pointer;
