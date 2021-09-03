@@ -1,3 +1,71 @@
+.animate-in {
+  visibility: visible;
+  opacity: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@-webkit-keyframes animate-in {
+  from {
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0%;
+  }
+  to {
+    visibility: visible;
+    opacity: 100%;
+  }
+}
+
+@keyframes animate-in {
+  from {
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0%;
+  }
+  to {
+    visibility: visible;
+    opacity: 100%;
+  }
+}
+
+.animate-out {
+  visibility: hidden;
+  opacity: 0%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@-webkit-keyframes animate-out {
+  from {
+    visibility: visible;
+    opacity: 100%;
+  }
+  99% {
+    visibility: hidden;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes animate-out {
+  from {
+    visibility: visible;
+    opacity: 100%;
+  }
+  99% {
+    visibility: hidden;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -180,6 +248,8 @@ h1, h2, h3, h4, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 20px 20px 100px #1a1919, -20px 20px 100px #1a1919;
+          box-shadow: 20px 20px 100px #1a1919, -20px 20px 100px #1a1919;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

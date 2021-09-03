@@ -1,0 +1,43 @@
+.animate-in{
+    visibility: visible;
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+@keyframes animate-in{
+    from{
+        visibility: hidden;
+    }
+
+    1%{
+        visibility: visible;
+        opacity: 0%;
+    }
+
+    to{
+        visibility: visible;
+        opacity: 100%;
+    }
+
+}
+
+.animate-out{
+    visibility: hidden;
+    opacity: 0%;
+    transition: 0.5s;
+}
+
+@keyframes animate-out{
+    from{
+        visibility: visible;
+        opacity: 100%;
+    }
+
+    99%{
+        visibility: hidden;
+    }
+
+    to{
+        opacity: 0%;
+    }
+}
