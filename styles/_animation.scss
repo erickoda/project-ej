@@ -1,7 +1,7 @@
 .animate-in{
     visibility: visible;
     opacity: 100%;
-    transition: 0.5s;
+    transform: translateX(0);
 }
 
 @keyframes animate-in{
@@ -24,7 +24,7 @@
 .animate-out{
     visibility: hidden;
     opacity: 0%;
-    transition: 0.5s;
+    transform: translateX(100vw);
 }
 
 @keyframes animate-out{
@@ -40,4 +40,15 @@
     to{
         opacity: 0%;
     }
+}
+
+
+.background-in{
+    background-color: $light-blue;
+    backface-visibility: visible;
+}
+
+.background-out{
+    //background-color: $black;
+    backface-visibility: hidden;
 }

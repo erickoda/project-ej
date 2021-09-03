@@ -1,8 +1,8 @@
 .animate-in {
   visibility: visible;
   opacity: 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 @-webkit-keyframes animate-in {
@@ -36,8 +36,8 @@
 .animate-out {
   visibility: hidden;
   opacity: 0%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
 }
 
 @-webkit-keyframes animate-out {
@@ -64,6 +64,17 @@
   to {
     opacity: 0%;
   }
+}
+
+.background-in {
+  background-color: #70c7d4;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+}
+
+.background-out {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 *, *::before, *::after {
@@ -142,14 +153,13 @@ h1, h2, h3, h4, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 0.8rem 1.875rem;
   height: 13vh;
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
 }
 
 .header___logo img {
-  width: 9.375rem;
+  width: 9rem;
 }
 
 .header___menu ul {
@@ -167,6 +177,7 @@ h1, h2, h3, h4, p {
 
 .header___menu___content {
   font-weight: 700;
+  font-size: 15px;
   letter-spacing: 0.2rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -175,7 +186,7 @@ h1, h2, h3, h4, p {
 
 .header___menu___content:hover {
   font-size: larger;
-  color: #70c7d4;
+  color: #245f68;
 }
 
 .header___menu___button img {
@@ -257,6 +268,8 @@ h1, h2, h3, h4, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .hamburger___menu > a {
@@ -624,11 +637,11 @@ h1, h2, h3, h4, p {
 
 .contatos {
   background-color: #1a1919;
-  padding-bottom: 100px;
+  padding-bottom: 6.25rem;
 }
 
 .contatos h2 {
-  padding: 50px 0;
+  padding: 3.125rem 0;
 }
 
 .contatos___container {
@@ -655,7 +668,7 @@ h1, h2, h3, h4, p {
 
 @media (max-width: 800px) {
   .contatos___container___redes-sociais {
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
   }
 }
 
@@ -670,16 +683,20 @@ h1, h2, h3, h4, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #f3efef;
+  width: 150px;
 }
 
 .contatos___container___redes-sociais___items img {
-  height: 50px;
-  margin-right: 20px;
+  height: 3.125rem;
+  margin-right: 1.25rem;
 }
 
 .contatos___container___redes-sociais___items:not(:last-child) {
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 }
 
 .contatos___container___forms {
@@ -714,7 +731,7 @@ h1, h2, h3, h4, p {
 }
 
 .contatos___container___forms___items:not(:last-child) {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 .contatos___container___forms___items > label {
@@ -722,9 +739,9 @@ h1, h2, h3, h4, p {
 }
 
 .contatos___container___forms___items > input {
-  font-size: 40px;
-  width: 400px;
-  height: 60px;
+  font-size: 2.5rem;
+  width: 25rem;
+  height: 3.75rem;
 }
 
 @media (max-width: 800px) {
