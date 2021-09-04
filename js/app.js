@@ -25,10 +25,19 @@ hamburgerBtn.addEventListener('click', function(){
 
 })
 
+
+
 //Animações vinculadas ao scroll da página
-setInterval(function scrollAnimation(){
+function scrollPosition(){
+    return window.pageYOffset;
+}
+
+window.addEventListener('scroll', function(){
+    var scrollY = scrollPosition();
+    console.log(scrollY);
+
     //Navbar
-    if (window.scrollY > 10){
+    if (scrollY > 10){
         //console.log("scroll");
         navbar.classList.remove('background-out');
         navbar.classList.add('background-in');
@@ -42,7 +51,7 @@ setInterval(function scrollAnimation(){
     }
 
     //Tratamentos
-    if (window.scrollY > 200){
+    if (scrollY > 200){
         tratamentosAll.classList.add('tratamentos-in');
         tratamentosAll.classList.remove('tratamentos-out');
     }
@@ -52,7 +61,7 @@ setInterval(function scrollAnimation(){
     }
 
     //Sobre
-    if (window.scrollY > 750){
+    if (scrollY > 750){
         //Paragrafo fade-in
         sobreParagrafo.classList.add('sobre-in-p-ul');
         sobreParagrafo.classList.remove('sobre-out-p-ul');
@@ -83,8 +92,8 @@ setInterval(function scrollAnimation(){
             sobreTitle[i].classList.remove('sobre-in-t');
         }
     }
-}, 100);
 
+});
 
 //carousel 
 
