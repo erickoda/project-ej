@@ -15,18 +15,52 @@
         &___items{
             display: flex;
             flex-direction: row;
-            margin: 20px;
+            
+            
 
-            &___bg{
-                background-color: $black;
-                border-radius: 5px;
-                margin-top: 20px;
-                height: 300px; 
-                width: 300px; 
-                z-index: 0;
-                transform: translateX(320px);
+            &___membro{
+                display: flex; //alternar entre display none e flex
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                color: $white;
+
+                @include mobile($max-width){
+                    flex-direction: column;
+                    margin: 0 0 20px 0;
+                }
+
+                margin: 20px;
+                
+
+                &___descricao{
+                    background-color: $dark-gray;
+                    border-radius: 5px;
+                    margin-top: 20px;
+                    height: 300px; 
+                    width: 300px; 
+                    padding: 30px;
+                    z-index: 0;
+                }
+
+                
+
+                
+
+                
+
+                &___hr{
+                    margin-top: 0.5rem;
+                    height: 1px;
+                    width: 60%;
+                    background-color: $white;
+                }
+
+                h4{
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                }
             }
         }
-         
     }
 }

@@ -34,10 +34,11 @@
     }
 
     99%{
-        visibility: hidden;
+        visibility: visible;
     }
 
     to{
+        visibility: hidden;
         opacity: 0%;
     }
 }

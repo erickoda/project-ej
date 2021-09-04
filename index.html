@@ -14,7 +14,7 @@
     <!--Import CSS-->
     <link rel="stylesheet" href="./styles/style.css">
 
-    <!--Icons-->
+    <!--Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
@@ -38,6 +38,7 @@
         <!--Menu-->
         <nav class="header___container">
 
+            <!--LOGO-->
             <div class="header___logo">
                 <a href="#"><img src="./img/logo.svg" alt="logo"></a>
             </div>
@@ -49,6 +50,7 @@
                 <span></span>
             </a>
 
+            <!--PC-->
             <div class="header___menu hide-for-mobile brightness">
                 <ul>
                     <li>
@@ -61,13 +63,13 @@
                         <a href="#sobre" class="header___menu___items">SOBRE</a>
                     </li>
                     <li>
-                        <a href="#historia" class="header___menu___items">HISTÓRIA</a>
-                    </li>
-                    <li>
-                        <a href="#localizacao" class="header___menu___items">LOCALIZAÇÕES</a>
+                        <a href="#localizacao" class="header___menu___items">LOCALIZAÇÃO</a>
                     </li>
                     <li>
                         <a href="#consultorio" class="header___menu___items">CONSULTÓRIO</a>
+                    </li>
+                    <li>
+                        <a href="#equipe" class="header___menu___items">EQUIPE</a>
                     </li>
                     <li>
                         <a href="#contatos" class="header___menu___items">CONTATO</a>
@@ -80,15 +82,15 @@
         </nav>
 
         <!--Hamburger box-->
-        <div class="hamburger___menu animate-out">
+        <div class="animate-out hamburger___menu">
             <a href="#header">INICIO</a>
             <a href="#tratamentos">TRATAMENTOS</a>
             <a href="#sobre">SOBRE</a>
-            <a href="#historia">HISTÓRIA</a>
             <a href="#localizacao">LOCALIZAÇÕES</a>
             <a href="#consultorio">CONSULTÓRIO</a>
+            <a href="#equipe">EQUIPE</a>
             <a href="#contatos">CONTATO</a>
-            <a href="#" class="hamburger___menu___button"><img src="./img/whatsapp-logo-2020.svg" alt="logo whatsapp"></a>
+            <span class="hamburger___menu___button"><img src="./img/whatsapp-logo-2020.svg" alt="logo whatsapp"></span>
         </div>
 
     </header>
@@ -268,20 +270,35 @@
     <!--Equipe-->
     <section class="equipe" id="equipe">
         <h2 class="subtitles">EQUIPE</h2>
+
         <div class="equipe___container">
             <div class="equipe___container___items">
-                <div class="equipe___container___items">
-                    <img src="./img/vitu.jpg" alt="">
+
+                <div class="equipe___container___items___membro">
+                    <div class="equipe___container___items___membro___descricao" id="equipe-left">
+                        <h4>VITU</h4>
+                        <div class="equipe___container___items___membro___descricao___hr"></div>
+                    </div>
+
+                    <div class="equipe___container___items___foto">
+                        <img src="./img/vitu.jpg" alt="">
+                    </div>
                 </div>
 
-                <div class="equipe___container___items___bg">
-                </div>
 
-                <div class="equipe___container___items">
-                    <img src="./img/vitu.jpg" alt="">
+                <div class="equipe___container___items___membro">
+                    <div class="equipe___container___items___foto">
+                        <img src="./img/vitu.jpg" alt="">
+                    </div>
+
+                    <div class="equipe___container___items___membro___descricao" id="equipe-right">
+                        <h4>VITU</h4>
+                        <div class="equipe___container___items___membro___descricao___hr"></div>
+                    </div>
                 </div>
             </div>
 
+            <!--
             <div class="equipe___container___items">
                 <div class="equipe___container___items">
                     <img src="./img/vitu.jpg" alt="">
@@ -290,13 +307,15 @@
                 <div class="equipe___container___items">
                     <img src="./img/vitu.jpg" alt="">
                 </div>
-            </div>
+            </div>-->
         </div>
     </section>
 
     <!--Footer-->
     <footer class="contatos container-margin" id="contatos">
         <h2 class="subtitles">CONTATOS</h2>
+
+        <!--Redes Sociais e Telefone-->
         <div class="contatos___container">
             <div class="contatos___container___redes-sociais">
                 <a href="#" class="contatos___container___redes-sociais___items">
@@ -321,6 +340,7 @@
                 </a>
             </div>
 
+            <!--Forms-->
             <forms class = "contatos___container___forms" action="form.php" method="get">
                 <div class="contatos___container___forms___items">
                     <label>Nome</label>
