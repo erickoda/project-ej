@@ -9,6 +9,7 @@
 
     nav{
         position:fixed;
+        z-index: 2;
         top: 0;
         right: 0;
         left: 0;
@@ -20,8 +21,10 @@
         align-items: center;
         //flex-wrap: wrap;
         //padding: 0.8rem 1.875rem;
-        height: 13vh;
+        height: 11vh;
         transition: 0.6s ease-out;
+
+        padding: 50px 0 40px 0;
     }
 
 
@@ -45,7 +48,7 @@
             }
         }
 
-        &___content{
+        &___items{
 
             font-weight: 700;
             font-size: 15px;
@@ -60,13 +63,14 @@
             }
         }
 
-        &___button{
+        &___button{//whats button
             
             img{
                 height: 3.75rem;
                 padding: 0.9375rem;
-                background-color: $light-blue;
-                border-radius: 30%;
+                //background-color: $green;
+                //border-radius: 30%;
+                //filter: brightness(100%);
 
                 transition: height 0.3s;
 
@@ -106,22 +110,33 @@
         position: absolute;
         top: 0;
         left: 0;
-        
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        justify-content: center;
-        align-items: center;
         height: 100%;
         width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
 
-        > h3{
-            font-size: 4rem;
-        }
+        &___frase{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: center;
+            align-items: center;
+            color: rgb(234, 240, 241);
 
-        > p{
-            font-size: 3rem;
+            > h3{
+                font-size: 4rem;
+                font-weight: bolder;
+            }
+
+            > p{
+                font-size: 3rem;
+                font-weight: 300;
+            }
         }
+        
     }
 }
 
@@ -142,6 +157,18 @@
     align-items: center;
 
     transition: 0.5s;
+
+    &___button{
+        > img{
+            height: 3rem;
+            //padding: 0.9375rem;
+            //background-color: $green;
+            //border-radius: 30%;
+             filter: brightness(5%);
+        }
+
+        //transition: height 0.3s;
+    }
 
     > a{
 

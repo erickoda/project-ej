@@ -130,6 +130,11 @@ h1, h2, h3, h4, p {
   }
 }
 
+.brightness {
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+}
+
 .header {
   height: 100vh;
   width: 100%;
@@ -139,6 +144,7 @@ h1, h2, h3, h4, p {
 
 .header nav {
   position: fixed;
+  z-index: 2;
   top: 0;
   right: 0;
   left: 0;
@@ -153,9 +159,10 @@ h1, h2, h3, h4, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 13vh;
+  height: 11vh;
   -webkit-transition: 0.6s ease-out;
   transition: 0.6s ease-out;
+  padding: 50px 0 40px 0;
 }
 
 .header___logo img {
@@ -175,7 +182,7 @@ h1, h2, h3, h4, p {
   padding-left: 1.875rem;
 }
 
-.header___menu___content {
+.header___menu___items {
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 0.2rem;
@@ -184,7 +191,7 @@ h1, h2, h3, h4, p {
   color: #f3efef;
 }
 
-.header___menu___content:hover {
+.header___menu___items:hover {
   font-size: larger;
   color: #245f68;
 }
@@ -192,8 +199,6 @@ h1, h2, h3, h4, p {
 .header___menu___button img {
   height: 3.75rem;
   padding: 0.9375rem;
-  background-color: #70c7d4;
-  border-radius: 30%;
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
 }
@@ -221,6 +226,20 @@ h1, h2, h3, h4, p {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header___img___container___frase {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,16 +254,17 @@ h1, h2, h3, h4, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  width: 100%;
+  color: #eaf0f1;
 }
 
-.header___img___container > h3 {
+.header___img___container___frase > h3 {
   font-size: 4rem;
+  font-weight: bolder;
 }
 
-.header___img___container > p {
+.header___img___container___frase > p {
   font-size: 3rem;
+  font-weight: 300;
 }
 
 .hamburger___menu {
@@ -270,6 +290,12 @@ h1, h2, h3, h4, p {
           align-items: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.hamburger___menu___button > img {
+  height: 3rem;
+  -webkit-filter: brightness(5%);
+          filter: brightness(5%);
 }
 
 .hamburger___menu > a {
@@ -633,6 +659,47 @@ h1, h2, h3, h4, p {
 
 #radio3:checked ~ .first {
   margin-left: -40%;
+}
+
+.equipe img {
+  height: 300px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.equipe___container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.equipe___container___items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 20px;
+}
+
+.equipe___container___items___bg {
+  background-color: #1a1919;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 300px;
+  width: 300px;
+  z-index: 0;
+  -webkit-transform: translateX(320px);
+          transform: translateX(320px);
 }
 
 .contatos {
