@@ -2,7 +2,6 @@ const hamburgerBtn = document.querySelector('.header___hamburger');
 const hamburgerMenu = document.querySelector('.hamburger___menu');
 const navbar = document.querySelector('.header___container');
 const navbarTitles = document.querySelector('.header___menu')
-//const menuBtn = document.querySelector('.has-fade');
 
 hamburgerBtn.addEventListener('click', function(){
 
@@ -20,19 +19,6 @@ hamburgerBtn.addEventListener('click', function(){
     }
 
 })
-
-/*function scrollAnimation(){
-    if (window.scrollY > 10){
-        console.log("scroll");
-        navbar.classList.remove('background-out');
-        navbar.classList.add('background-in');
-    }
-    else {
-        console.log("scroll");
-        navbar.classList.remove('background-in');
-        navbar.classList.add('background-out');
-    }
-}*/
 
 setInterval(function scrollAnimation(){
     if (window.scrollY > 10){
