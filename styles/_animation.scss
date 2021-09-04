@@ -43,21 +43,53 @@
     }
 }
 
-
+//navbar bg
 .background-in{
     background-color: $light-blue;
     backface-visibility: visible;
 }
 
+//navbar bg
 .background-out{
     //background-color: $black;
     backface-visibility: hidden;
 }
 
-.scale-in{
-
+.tratamentos-in{
+    transform: translateY(0);
+    opacity: 100%;
 }
 
-.scale-out{
-    
+.tratamentos-out{
+    transform: translateY(-160px);
+    opacity: 0%;
+}
+
+
+//Sobre Title
+.sobre-in-t{
+    transform: translateY(0);
+    opacity: 100%;
+    transition: all 1s ease-out;
+}
+
+//Sobre Title
+.sobre-out-t{
+    transform: translateY(-150px);
+    opacity: 0%;
+    transition: all 1s ease-out;
+}
+
+//sobre parágrafo
+.sobre-in-p-ul{
+    transform: rotateY(0);
+    opacity: 100%;
+    transition: all 1s ease-out;
+}
+
+//sobre parágrafo
+.sobre-out-p-ul{
+    transform: rotateY(90deg);
+    opacity: 0%;
+    transition: all 1s ease-out;
 }

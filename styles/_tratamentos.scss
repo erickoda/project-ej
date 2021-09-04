@@ -18,6 +18,8 @@
         flex-wrap: wrap;
         width: 70vw;
 
+        transition: all 1s ease-in-out;
+
         @include mobile ($change-flex-tratamento){
             flex-direction: column;
             align-items: center;

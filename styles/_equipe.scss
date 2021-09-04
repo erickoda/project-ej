@@ -1,9 +1,5 @@
 .equipe{
 
-    position: relative;
-    height: 428;
-    width: 100%;
-
     &___container{
         display: flex;
         flex-direction: column;
@@ -11,7 +7,6 @@
 
         &___items{
             display: flex;
-            flex-direction: row;
 
             @include mobile($max-width){
                 flex-direction: column;
@@ -24,9 +19,6 @@
                 color: $white;
 
                 margin: 20px;
-                //position: relative;
-                
-                
 
                 &___descricao{
 
