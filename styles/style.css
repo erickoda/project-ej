@@ -123,9 +123,33 @@
   transition: all 1s ease-out;
 }
 
+.map-icon-up {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.map-icon-down {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.map-shadow-up {
+  -webkit-transform: scale(85%);
+          transform: scale(85%);
+}
+
+.map-shadow-down {
+  -webkit-transform: scale(100%);
+          transform: scale(100%);
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -620,6 +644,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .localizacao___container___endereco {
@@ -629,12 +656,20 @@ button {
 }
 
 .localizacao___container___endereco___text {
-  padding-bottom: 1.5rem;
   padding-left: 1.5rem;
 }
 
 .localizacao___container___endereco___icon {
   width: 50px;
+}
+
+.localizacao___container___endereco___icon > img {
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+}
+
+.localizacao___container___endereco___icon:nth-child(2) {
+  width: 40px;
 }
 
 .localizacao___container___mapa {

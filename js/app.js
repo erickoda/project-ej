@@ -1,3 +1,4 @@
+"use strict"
 const hamburgerBtn = document.querySelector('.header___hamburger');
 const hamburgerMenu = document.querySelector('.hamburger___menu');
 const navbar = document.querySelector('.header___container');
@@ -6,6 +7,10 @@ const tratamentosAll = document.querySelector('.tratamentos___items');
 const sobreParagrafo = document.querySelector('.sobre___container___items > p');
 const sobreTopicos = document.querySelector('.sobre___container___items > ul');
 const sobreTitle = document.querySelectorAll('.sobre___container___items > h3');
+
+//map-icon
+const iconMapa = document.querySelector('#map-icon');
+const iconMapaShadow = document.querySelector('#map-shadow');
 
 //Animação do botão hamburger
 hamburgerBtn.addEventListener('click', function(){
@@ -34,7 +39,6 @@ function scrollPosition(){
 
 window.addEventListener('scroll', function(){
     var scrollY = scrollPosition();
-    console.log(scrollY);
 
     //Navbar
     if (scrollY > 10){
@@ -95,8 +99,34 @@ window.addEventListener('scroll', function(){
 
 });
 
+//Mapa-icon animation
+setInterval(function(){
+
+    if(iconMapa.classList.contains('map-icon-down')){
+        iconMapa.classList.add('map-icon-up');
+        iconMapa.classList.remove('map-icon-down');
+
+        iconMapaShadow.classList.add('map-shadow-up');
+        iconMapaShadow.classList.remove('map-shadow-down');
+    }
+
+    else {
+        iconMapa.classList.add('map-icon-down');
+        iconMapa.classList.remove('map-icon-up');
+
+        iconMapaShadow.classList.add('map-shadow-down');
+        iconMapaShadow.classList.remove('map-shadow-up');
+    }
+    
+
+}, 1500)
+
 //carousel 
 
 //criar um vetor com todas as imgs 
 
 //fzer com q 2 imgs tenham seus tranforms: translateX alterados
+
+
+//frase de efeito
+//frase não tão efetiva
