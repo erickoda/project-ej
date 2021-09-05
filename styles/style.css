@@ -222,7 +222,6 @@ button:hover {
 
 .header {
   height: 100vh;
-  width: 100%;
   /*display: flex;
     flex-wrap: wrap;*/
 }
@@ -305,16 +304,17 @@ button:hover {
   margin-bottom: 0.3125rem;
 }
 
+.header___img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
 .header___img___container {
-  background-image: url(../img/consultorio.jpg);
-  background-blend-mode: color;
-  background-color: rgba(29, 30, 31, 0.548);
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,6 +352,24 @@ button:hover {
 .header___img___container___frase > p {
   font-size: 3rem;
   font-weight: 300;
+}
+
+#slide-1 {
+  background-image: url(../img/consultorio.jpg);
+  background-blend-mode: color;
+  background-color: rgba(22, 22, 22, 0.781);
+}
+
+#slide-2 {
+  background-image: url(../img/consultorio2.jpg);
+  background-blend-mode: color;
+  background-color: rgba(22, 22, 22, 0.781);
+}
+
+#slide-3 {
+  background-image: url(../img/consultorio3.jpg);
+  background-blend-mode: darken;
+  background-color: rgba(22, 22, 22, 0.781);
 }
 
 .hamburger___menu {

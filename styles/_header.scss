@@ -1,7 +1,7 @@
 .header{
 
     height: 100vh;
-    width:  100%;
+    //width:  100%;
     //background-image: url(../img/consultorio.jpg);
 
     /*display: flex;
@@ -102,44 +102,73 @@
 
 
     //img central do inicio da página
-    &___img___container{
+    &___img{
 
-        background-image: url(../img/consultorio.jpg);
-        background-blend-mode: color;
-        background-color: $transparent-gray;
-        background-size: cover;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        
         display: flex;
-        align-items: center;
-        justify-content: center;
-        
+        //width: 300%;
+        overflow: hidden;
 
-        &___frase{
+        &___container{
+    
+            //position: absolute;
+            //top: 0;
+            //left: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+
             display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
             align-items: center;
-            color: rgb(234, 240, 241);
-
-            > h3{
-                font-size: 4rem;
-                font-weight: bolder;
+            justify-content: center;
+            
+    
+            &___frase{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                color: rgb(234, 240, 241);
+    
+                > h3{
+                    font-size: 4rem;
+                    font-weight: bolder;
+                }
+    
+                > p{
+                    font-size: 3rem;
+                    font-weight: 300;
+                }
             }
-
-            > p{
-                font-size: 3rem;
-                font-weight: 300;
-            }
+            
         }
-        
+
     }
+        
+}
+
+#slide-1{
+    background-image: url(../img/consultorio.jpg);
+    background-blend-mode: color;
+    background-color: $transparent-semidark-gray;
+    //transform: translateX(100px);
+    //background-size: cover;
+}
+
+#slide-2{
+    background-image: url(../img/consultorio2.jpg);
+    background-blend-mode: color;
+    background-color: $transparent-semidark-gray;
+    //transform: translateX(1920px);
+    //background-size: cover;
+}
+
+#slide-3{
+    background-image: url(../img/consultorio3.jpg);
+    background-blend-mode: darken;
+    background-color: $transparent-semidark-gray;
+    //transform: translateX(1920*2px);
+    //background-size: cover;
 }
 
 .hamburger___menu{
