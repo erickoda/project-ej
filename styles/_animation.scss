@@ -125,7 +125,7 @@
 }
 
 .hamburger-btn-close-span-1-down{
-    transform: translateY(9px);
+    transform: translateY(9px) rotateZ(45deg);
 }
 
 .hamburger-btn-close-span-2-opacity{
@@ -133,5 +133,5 @@
 }
 
 .hamburger-btn-close-span-3-up{
-    transform: translateY(-9px);
+    transform: translateY(-9px) rotateZ(-45deg);
 }

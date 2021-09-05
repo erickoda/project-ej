@@ -5,7 +5,7 @@
 const hamburgerBtn = document.querySelector('.header___hamburger');
 const hamburgerMenu = document.querySelector('.hamburger___menu');
 const hamburgerMenuLines = document.querySelectorAll('.header___hamburger > span');
-console.log(hamburgerMenuLines);
+//console.log(hamburgerMenuLines);
 
 //navbar
 const navbar = document.querySelector('.header___container');
@@ -24,12 +24,33 @@ const iconMapa = document.querySelector('#map-icon');
 const iconMapaShadow = document.querySelector('#map-shadow');
 const textMapa = document.querySelector('.localizacao___container___endereco___text');
 
-//pause fn
-function sleep(ms) {
-    return new Promise(
-        resolve => setTimeout(resolve, ms)
-    );
-}
+//Links Internos
+const linksInternosDesktop = document.querySelectorAll('.header___menu a[href^="#"]');
+const linksInternosMobile = document.querySelectorAll('.hamburger___menu a[href^="#"]');
+
+//Ajuste para altura de pixels para onde o link interno vai para
+linksInternosMobile.forEach(link => {
+    link.addEventListener('click', function scrollClick(event){
+        event.preventDefault();
+        const element = event.target;
+        const id = element.getAttribute('href');
+        const section = document.querySelector(id);
+
+        window.scroll(0, section.offsetTop - 100);//Para mobile reduz em 100px
+    })
+})
+
+//Ajuste para altura de pixels para onde o link interno vai para
+linksInternosDesktop.forEach(link => {
+    link.addEventListener('click', function scrollClick(event){
+        event.preventDefault();
+        const element = event.target;
+        const id = element.getAttribute('href');
+        const section = document.querySelector(id);
+
+        window.scroll(0, section.offsetTop - 150);//Para mobile reduz em 150px
+    })
+})
 
 //Animação do botão hamburger
 hamburgerBtn.addEventListener('click', function(){
@@ -46,7 +67,7 @@ hamburgerBtn.addEventListener('click', function(){
         //hamburger menu btn
         hamburgerMenuLines[0].classList.remove('hamburger-btn-close-span-1-down');
         hamburgerMenuLines[2].classList.remove('hamburger-btn-close-span-3-up');
-        sleep(300);
+        hamburgerMenuLines[1].classList.remove('hamburger-btn-close-span-2-opacity');
     }
 
     else{
@@ -58,7 +79,7 @@ hamburgerBtn.addEventListener('click', function(){
         //hamburger menu btn
         hamburgerMenuLines[0].classList.add('hamburger-btn-close-span-1-down');
         hamburgerMenuLines[2].classList.add('hamburger-btn-close-span-3-up');
-        sleep(300);
+        hamburgerMenuLines[1].classList.add('hamburger-btn-close-span-2-opacity');
     }
 
 })

@@ -119,8 +119,8 @@
 }
 
 .hamburger-btn-close-span-1-down {
-  -webkit-transform: translateY(9px);
-          transform: translateY(9px);
+  -webkit-transform: translateY(9px) rotateZ(45deg);
+          transform: translateY(9px) rotateZ(45deg);
 }
 
 .hamburger-btn-close-span-2-opacity {
@@ -128,8 +128,8 @@
 }
 
 .hamburger-btn-close-span-3-up {
-  -webkit-transform: translateY(-9px);
-          transform: translateY(-9px);
+  -webkit-transform: translateY(-9px) rotateZ(-45deg);
+          transform: translateY(-9px) rotateZ(-45deg);
 }
 
 *, *::before, *::after {
