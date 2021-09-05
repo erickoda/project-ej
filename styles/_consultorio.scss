@@ -1,0 +1,40 @@
+.consultorio{
+
+    &___container{
+
+
+        &___items{
+            display: flex;
+            justify-content: center;
+
+            &___carousel{
+
+                display: flex;
+                width: 42.5rem;
+                border-radius: 5px;
+                overflow: hidden;
+
+                @include mobile($change-flex){
+                    width: 100vw;
+                    border-radius: 0px;
+                } 
+
+                &___imgs{
+                    display: flex;
+                    justify-content: center;
+                    transition: 1.5s ease-in-out;
+                    
+                    > img{
+                        width: 42.5rem;
+                        margin: 0;
+                        padding: 0;
+
+                        @include mobile($change-flex){
+                            width: 100vw;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}

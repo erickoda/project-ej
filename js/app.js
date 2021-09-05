@@ -28,6 +28,11 @@ const textMapa = document.querySelector('.localizacao___container___endereco___t
 const linksInternosDesktop = document.querySelectorAll('.header___menu a[href^="#"]');
 const linksInternosMobile = document.querySelectorAll('.hamburger___menu a[href^="#"]');
 
+//Consultorio carousel imgs
+const consultorioCarouselImgs = document.querySelectorAll('.consultorio___container___items___carousel___imgs > img');
+const consultorioCarouselContainer = document.querySelector('.consultorio___container___items___carousel___imgs');
+
+
 //Ajuste para altura de pixels para onde o link interno vai para
 linksInternosMobile.forEach(link => {
     link.addEventListener('click', function scrollClick(event){
@@ -87,24 +92,15 @@ hamburgerBtn.addEventListener('click', function(){
 
 
 //Animações vinculadas ao scroll da página
-/*function scrollPosition(){
-    return window.pageYOffset;
-}*/
-
 window.addEventListener('scroll', function(){
-    //var scrollY = scrollPosition();
-
-    console.log(window.scrollY);
 
     //Navbar
     if (window.scrollY > 10){
-        //console.log("scroll");
         navbar.classList.remove('background-out');
         navbar.classList.add('background-in');
         navbarTitles.classList.remove('brightness');
     }
     else {
-        //console.log("not-scrolled");
         navbar.classList.remove('background-in');
         navbar.classList.add('background-out');
         navbarTitles.classList.add('brightness');
@@ -123,7 +119,6 @@ window.addEventListener('scroll', function(){
     //Sobre Desktop
     if (window.scrollY > 750 && this.document.documentElement.clientWidth > 1100){
         //Paragrafo fade-in
-        console.log(this.document.documentElement.clientWidth);
         sobreParagrafo.classList.add('rotate-in');
         sobreParagrafo.classList.remove('rotate-out');
 
@@ -182,7 +177,6 @@ window.addEventListener('scroll', function(){
         textMapa.classList.remove('rotate-out');
 
     }
-
     //Animação Localização texto mobile
     else if(window.scrollY > 4200 && this.document.documentElement.clientWidth <= 1100){
         textMapa.classList.add('rotate-in');
@@ -217,6 +211,22 @@ setInterval(function(){
     
 
 }, 1500)
+
+let counter = 1;
+setInterval(() =>{
+
+    if(counter === 3) counter = 0;
+
+    if(this.document.documentElement.clientWidth > 1100){   
+        consultorioCarouselContainer.style.transform=`translateX(${-680*counter}px)`;
+        counter++;
+    }
+    else if(this.document.documentElement.clientWidth <= 1100){   
+        consultorioCarouselContainer.style.transform=`translateX(${-100*counter}vw)`;
+        counter++;
+    }
+
+},3000)
 
 
 

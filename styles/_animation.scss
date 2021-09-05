@@ -110,12 +110,14 @@
 
 //Animação da sombra do mapa 'encolendo'
 .map-shadow-up{
-    transform: scale(85%);
+    //transform: scale(85%);
+    transform: scale(100%);
 }
 
 //Animação da sombra do mapa 'expandindo'
 .map-shadow-down{
-    transform: scale(100%);
+    //transform: scale(100%);
+    transform: scale(85%);
 }
 
 
@@ -134,4 +136,9 @@
 
 .hamburger-btn-close-span-3-up{
     transform: translateY(-9px) rotateZ(-45deg);
+}
+
+.consultorio-carousel{
+    transform: translateX(-680px);
+    transition: 1s ease-in-out;
 }
