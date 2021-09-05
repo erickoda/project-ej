@@ -34,9 +34,9 @@ linksInternosMobile.forEach(link => {
         event.preventDefault();
         const element = event.target;
         const id = element.getAttribute('href');
-        const section = document.querySelector(id);
+        const sectionHeight = document.querySelector(id).offsetTop;
 
-        window.scroll(0, section.offsetTop - 100);//Para mobile reduz em 100px
+        window.scroll(0, sectionHeight - 100);//Para mobile reduz em 100px
     })
 })
 
@@ -46,9 +46,9 @@ linksInternosDesktop.forEach(link => {
         event.preventDefault();
         const element = event.target;
         const id = element.getAttribute('href');
-        const section = document.querySelector(id);
+        const sectionHeight = document.querySelector(id).offsetTop;
 
-        window.scroll(0, section.offsetTop - 150);//Para mobile reduz em 150px
+        window.scroll(0, sectionHeight - 150);//Para mobile reduz em 150px
     })
 })
 
@@ -87,15 +87,17 @@ hamburgerBtn.addEventListener('click', function(){
 
 
 //Animações vinculadas ao scroll da página
-function scrollPosition(){
+/*function scrollPosition(){
     return window.pageYOffset;
-}
+}*/
 
 window.addEventListener('scroll', function(){
-    var scrollY = scrollPosition();
+    //var scrollY = scrollPosition();
+
+    console.log(window.scrollY);
 
     //Navbar
-    if (scrollY > 10){
+    if (window.scrollY > 10){
         //console.log("scroll");
         navbar.classList.remove('background-out');
         navbar.classList.add('background-in');
@@ -109,7 +111,7 @@ window.addEventListener('scroll', function(){
     }
 
     //Tratamentos
-    if (scrollY > 200){
+    if (window.scrollY > 200){
         tratamentosAll.classList.add('tratamentos-in');
         tratamentosAll.classList.remove('tratamentos-out');
     }
@@ -118,8 +120,28 @@ window.addEventListener('scroll', function(){
         tratamentosAll.classList.remove('tratamentos-in');
     }
 
-    //Sobre
-    if (scrollY > 750){
+    //Sobre Desktop
+    if (window.scrollY > 750 && this.document.documentElement.clientWidth > 1100){
+        //Paragrafo fade-in
+        console.log(this.document.documentElement.clientWidth);
+        sobreParagrafo.classList.add('rotate-in');
+        sobreParagrafo.classList.remove('rotate-out');
+
+        //Topico fade-in
+        sobreTopicos.classList.add('rotate-in');
+        sobreTopicos.classList.remove('rotate-out');
+
+        //Título fade-in
+        for(let i=0; i < sobreTitle.length; i++){
+            sobreTitle[i].classList.add('sobre-in-t');
+            sobreTitle[i].classList.remove('sobre-out-t');
+        }
+        
+    }
+
+    //Sobre Mobile
+    else if (window.scrollY > 1310 && this.document.documentElement.clientWidth <= 1100){
+
         //Paragrafo fade-in
         sobreParagrafo.classList.add('rotate-in');
         sobreParagrafo.classList.remove('rotate-out');
@@ -135,6 +157,7 @@ window.addEventListener('scroll', function(){
         }
         
     }
+
     else {
         //Paragrafo fade-out
         sobreParagrafo.classList.add('rotate-out');
@@ -151,15 +174,22 @@ window.addEventListener('scroll', function(){
         }
     }
 
-    //Animação Localização texto
-    if(scrollY > 1800){
-        //console.log("aqui");
+    
+
+    //Animação Localização texto desktop
+    if(window.scrollY > 1800 && this.document.documentElement.clientWidth > 1100){
+        textMapa.classList.add('rotate-in');
+        textMapa.classList.remove('rotate-out');
+
+    }
+
+    //Animação Localização texto mobile
+    else if(window.scrollY > 4200 && this.document.documentElement.clientWidth <= 1100){
         textMapa.classList.add('rotate-in');
         textMapa.classList.remove('rotate-out');
 
     }
     else{
-        //console.log("noaaqui");
         textMapa.classList.add('rotate-out');
         textMapa.classList.remove('rotate-in');
     }
@@ -187,6 +217,8 @@ setInterval(function(){
     
 
 }, 1500)
+
+
 
 //carousel 
 

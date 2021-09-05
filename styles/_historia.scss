@@ -9,7 +9,7 @@
         max-width: 60vw;
         text-align: justify;
 
-        @include mobile($change-flex-tratamento){
+        @include mobile($change-flex){
             max-width: 80vw;
         }
 

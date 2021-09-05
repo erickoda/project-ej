@@ -31,7 +31,7 @@
             width: 0.0625rem;
             background-color: $white;
 
-            @include mobile($change-flex-tratamento){
+            @include mobile($change-flex){
                 margin: 0;
                 height: 0.0625rem;
                 width: 100%;
@@ -47,7 +47,7 @@
         color: $white;
 
 
-        @include mobile($change-flex-tratamento){
+        @include mobile($change-flex){
             flex-direction: column;
             justify-items: center;
         }
@@ -60,7 +60,7 @@
 
             width: 18.75rem;
 
-            @include mobile($change-flex-tratamento){
+            @include mobile($change-flex){
                 margin: 4.6875rem 0 4.6875rem 0;
             }
 

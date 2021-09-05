@@ -5,7 +5,7 @@
     align-items: center;
     text-align: center;
 
-    @include mobile ($change-flex-tratamento){
+    @include mobile ($change-flex){
         margin-left: 0;
         margin-right: 0;
     }
@@ -14,16 +14,21 @@
     &___items{
 
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         width: 70vw;
 
         transition: all 1s ease-in-out;
 
-        @include mobile ($change-flex-tratamento){
-            flex-direction: column;
+        &___lines{
+            display: flex;
             align-items: center;
-            width: 100vw;
+
+            @include mobile ($change-flex){
+                flex-direction: column;
+                align-items: center;
+                width: 100vw;
+            }
         }
 
 

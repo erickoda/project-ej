@@ -8,7 +8,7 @@
         &___items{
             display: flex;
 
-            @include mobile($max-width){
+            @include mobile($change-flex){
                 flex-direction: column;
                 margin: 0;
             }
@@ -20,7 +20,7 @@
 
                 margin: 20px;
 
-                @include mobile($max-width){
+                @include mobile($change-flex){
                     flex-direction: column;
                     margin: 0 0 20px 0;
                 }
