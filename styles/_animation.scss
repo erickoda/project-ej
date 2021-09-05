@@ -1,10 +1,11 @@
+//hamburger animation in
 .animate-in{
     visibility: visible;
     opacity: 100%;
     transform: translateX(0);
 }
 
-@keyframes animate-in{
+/*@keyframes animate-in{
     from{
         visibility: hidden;
     }
@@ -19,15 +20,16 @@
         opacity: 100%;
     }
 
-}
+}*/
 
+//hamburger animation out
 .animate-out{
     visibility: hidden;
     opacity: 0%;
     transform: translateX(100vw);
 }
 
-@keyframes animate-out{
+/*@keyframes animate-out{
     from{
         visibility: visible;
         opacity: 100%;
@@ -41,7 +43,7 @@
         visibility: hidden;
         opacity: 0%;
     }
-}
+}*/
 
 //navbar bg
 .background-in{
@@ -80,33 +82,56 @@
     transition: all 1s ease-out;
 }
 
-//sobre parágrafo
-.sobre-in-p-ul{
+//sobre parágrafo.
+//sobre-int-p-ul
+.rotate-in{
     transform: rotateY(0);
     opacity: 100%;
     transition: all 1s ease-out;
 }
 
 //sobre parágrafo
-.sobre-out-p-ul{
+//sobre-out-p-ul
+.rotate-out{
     transform: rotateY(90deg);
     opacity: 0%;
     transition: all 1s ease-out;
 }
 
-//Animação do mapa
+//Animação do mapa para cima
 .map-icon-up{
     transform: translateY(-20px);
 }
 
+//Animação do mapa para baixo
 .map-icon-down{
     transform: translateY(0);
 }
 
+//Animação da sombra do mapa 'encolendo'
 .map-shadow-up{
     transform: scale(85%);
 }
 
+//Animação da sombra do mapa 'expandindo'
 .map-shadow-down{
     transform: scale(100%);
+}
+
+
+//hamburger btn animation
+.hamburger-btn-open{
+
+}
+
+.hamburger-btn-close-span-1-down{
+    transform: translateY(9px);
+}
+
+.hamburger-btn-close-span-2-opacity{
+    opacity: 0;
+}
+
+.hamburger-btn-close-span-3-up{
+    transform: translateY(-9px);
 }

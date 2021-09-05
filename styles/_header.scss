@@ -92,6 +92,8 @@
             width: 1.5625rem;
             background: $white;
 
+            transition: all 0.3s ease-out;
+
             &:not(:last-child){
                 margin-bottom: 0.3125rem;
             }

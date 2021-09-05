@@ -10,7 +10,7 @@
 
             @include mobile($max-width){
                 flex-direction: column;
-                margin: 0 0 20px 0;
+                margin: 0;
             }
 
 
@@ -19,6 +19,11 @@
                 color: $white;
 
                 margin: 20px;
+
+                @include mobile($max-width){
+                    flex-direction: column;
+                    margin: 0 0 20px 0;
+                }
 
                 &___descricao{
 

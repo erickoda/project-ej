@@ -1,16 +1,35 @@
 "use strict"
+
+
+//hamburger menu
 const hamburgerBtn = document.querySelector('.header___hamburger');
 const hamburgerMenu = document.querySelector('.hamburger___menu');
+const hamburgerMenuLines = document.querySelectorAll('.header___hamburger > span');
+console.log(hamburgerMenuLines);
+
+//navbar
 const navbar = document.querySelector('.header___container');
 const navbarTitles = document.querySelector('.header___menu');
+
+//Seção de tratamento
 const tratamentosAll = document.querySelector('.tratamentos___items');
+
+//Seção sobre
 const sobreParagrafo = document.querySelector('.sobre___container___items > p');
 const sobreTopicos = document.querySelector('.sobre___container___items > ul');
 const sobreTitle = document.querySelectorAll('.sobre___container___items > h3');
 
-//map-icon
+//Map-icon
 const iconMapa = document.querySelector('#map-icon');
 const iconMapaShadow = document.querySelector('#map-shadow');
+const textMapa = document.querySelector('.localizacao___container___endereco___text');
+
+//pause fn
+function sleep(ms) {
+    return new Promise(
+        resolve => setTimeout(resolve, ms)
+    );
+}
 
 //Animação do botão hamburger
 hamburgerBtn.addEventListener('click', function(){
@@ -18,14 +37,28 @@ hamburgerBtn.addEventListener('click', function(){
     console.log('click');
 
     if (hamburgerMenu.classList.contains('open')){
+
+        //hamburger menu box
         hamburgerMenu.classList.remove('open');
         hamburgerMenu.classList.add('animate-out');
         hamburgerMenu.classList.remove('animate-in');
+
+        //hamburger menu btn
+        hamburgerMenuLines[0].classList.remove('hamburger-btn-close-span-1-down');
+        hamburgerMenuLines[2].classList.remove('hamburger-btn-close-span-3-up');
+        sleep(300);
     }
+
     else{
+        //hamburger menu box
         hamburgerMenu.classList.add('open');
         hamburgerMenu.classList.add('animate-in');
         hamburgerMenu.classList.remove('animate-out');
+
+        //hamburger menu btn
+        hamburgerMenuLines[0].classList.add('hamburger-btn-close-span-1-down');
+        hamburgerMenuLines[2].classList.add('hamburger-btn-close-span-3-up');
+        sleep(300);
     }
 
 })
@@ -67,12 +100,12 @@ window.addEventListener('scroll', function(){
     //Sobre
     if (scrollY > 750){
         //Paragrafo fade-in
-        sobreParagrafo.classList.add('sobre-in-p-ul');
-        sobreParagrafo.classList.remove('sobre-out-p-ul');
+        sobreParagrafo.classList.add('rotate-in');
+        sobreParagrafo.classList.remove('rotate-out');
 
         //Topico fade-in
-        sobreTopicos.classList.add('sobre-in-p-ul');
-        sobreTopicos.classList.remove('sobre-out-p-ul');
+        sobreTopicos.classList.add('rotate-in');
+        sobreTopicos.classList.remove('rotate-out');
 
         //Título fade-in
         for(let i=0; i < sobreTitle.length; i++){
@@ -83,18 +116,31 @@ window.addEventListener('scroll', function(){
     }
     else {
         //Paragrafo fade-out
-        sobreParagrafo.classList.add('sobre-out-p-ul');
-        sobreParagrafo.classList.remove('sobre-in-p-ul');  
+        sobreParagrafo.classList.add('rotate-out');
+        sobreParagrafo.classList.remove('rotate-in');  
 
         //Topico fade-out
-        sobreTopicos.classList.add('sobre-out-p-ul');
-        sobreTopicos.classList.remove('sobre-in-p-ul');  
+        sobreTopicos.classList.add('rotate-out');
+        sobreTopicos.classList.remove('rotate-in');  
 
         //Título fade-out
         for(let i=0; i < sobreTitle.length; i++){
             sobreTitle[i].classList.add('sobre-out-t');
             sobreTitle[i].classList.remove('sobre-in-t');
         }
+    }
+
+    //Animação Localização texto
+    if(scrollY > 1800){
+        //console.log("aqui");
+        textMapa.classList.add('rotate-in');
+        textMapa.classList.remove('rotate-out');
+
+    }
+    else{
+        //console.log("noaaqui");
+        textMapa.classList.add('rotate-out');
+        textMapa.classList.remove('rotate-in');
     }
 
 });
