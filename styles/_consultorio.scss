@@ -1,8 +1,7 @@
 .consultorio{
 
     &___container{
-
-
+        
         &___items{
             display: flex;
             justify-content: center;
@@ -14,7 +13,7 @@
                 border-radius: 5px;
                 overflow: hidden;
 
-                @include mobile($change-flex){
+                @include mobile(1100px){
                     width: 100vw;
                     border-radius: 0px;
                 } 
@@ -29,7 +28,7 @@
                         margin: 0;
                         padding: 0;
 
-                        @include mobile($change-flex){
+                        @include mobile(1100px){
                             width: 100vw;
                         } 
                     }

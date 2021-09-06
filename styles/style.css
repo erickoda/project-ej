@@ -222,6 +222,7 @@ button:hover {
 
 .header {
   height: 100vh;
+  overflow: hidden;
   /*display: flex;
     flex-wrap: wrap;*/
 }
@@ -308,13 +309,14 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  width: 300%;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 .header___img___container {
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,18 +360,21 @@ button:hover {
   background-image: url(../img/consultorio.jpg);
   background-blend-mode: color;
   background-color: rgba(22, 22, 22, 0.781);
+  background-size: cover;
 }
 
 #slide-2 {
   background-image: url(../img/consultorio2.jpg);
   background-blend-mode: color;
   background-color: rgba(22, 22, 22, 0.781);
+  background-size: cover;
 }
 
 #slide-3 {
   background-image: url(../img/consultorio3.jpg);
   background-blend-mode: darken;
   background-color: rgba(22, 22, 22, 0.781);
+  background-size: cover;
 }
 
 .hamburger___menu {
@@ -379,7 +384,7 @@ button:hover {
   right: 0;
   margin: 0 5vw;
   background-color: white;
-  padding: 2.5rem 0 2.5rem 0;
+  padding: 2.5rem 0;
   border-radius: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,15 +398,15 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
   z-index: 2;
 }
 
 .hamburger___menu___button > img {
   height: 3rem;
-  -webkit-filter: brightness(5%);
-          filter: brightness(5%);
+  -webkit-filter: brightness(10%);
+          filter: brightness(10%);
 }
 
 .hamburger___menu > a {
@@ -431,7 +436,7 @@ button:hover {
   text-align: center;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .tratamentos {
     margin-left: 0;
     margin-right: 0;
@@ -463,7 +468,7 @@ button:hover {
           align-items: center;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .tratamentos___items___lines {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -545,7 +550,7 @@ button:hover {
   background-color: #f3efef;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .sobre___hr___items {
     margin: 0;
     height: 0.0625rem;
@@ -564,7 +569,7 @@ button:hover {
   color: #f3efef;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .sobre___container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -581,7 +586,7 @@ button:hover {
   width: 18.75rem;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .sobre___container___items {
     margin: 4.6875rem 0 4.6875rem 0;
   }
@@ -636,7 +641,7 @@ button:hover {
   text-align: justify;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .historia___container {
     max-width: 80vw;
   }
@@ -691,7 +696,7 @@ button:hover {
 }
 
 .localizacao___container___endereco___icon {
-  width: 50px;
+  width: 3.125rem;
 }
 
 .localizacao___container___endereco___icon > img {
@@ -780,7 +785,7 @@ button:hover {
   display: flex;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .equipe___container___items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -796,7 +801,7 @@ button:hover {
   margin: 20px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .equipe___container___items___membro {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -937,7 +942,7 @@ button:hover {
   color: #f3efef;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .contatos___container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -946,7 +951,7 @@ button:hover {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .contatos___container___redes-sociais {
     padding-bottom: 6.25rem;
   }
@@ -967,7 +972,7 @@ button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #f3efef;
-  width: 150px;
+  width: 9.375rem;
 }
 
 .contatos___container___redes-sociais___items img {
@@ -1002,7 +1007,7 @@ button:hover {
           flex-direction: column;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .contatos___container___forms___items {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1024,18 +1029,18 @@ button:hover {
   height: 3.75rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .contatos___container___forms___items > input {
     width: 70vw;
   }
 }
 
 .contatos___container___forms___items > textarea {
-  width: 400px;
-  height: 120px;
+  width: 25rem;
+  height: 7.5rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .contatos___container___forms___items > textarea {
     width: 70vw;
   }
@@ -1043,16 +1048,16 @@ button:hover {
 
 .contatos___container___forms___items___submit {
   border: none;
-  height: 50px;
-  width: 200px;
-  border-radius: 50px;
+  height: 3.125rem;
+  width: 12.5rem;
+  border-radius: 3.125rem;
   background-color: #70c7d4;
-  font-size: 25px;
+  font-size: 1.5625rem;
   color: #f3efef;
   font-weight: 600;
   text-transform: uppercase;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .contatos___container___forms___items___submit:hover {

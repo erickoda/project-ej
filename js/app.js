@@ -29,8 +29,11 @@ const linksInternosDesktop = document.querySelectorAll('.header___menu a[href^="
 const linksInternosMobile = document.querySelectorAll('.hamburger___menu a[href^="#"]');
 
 //Consultorio carousel imgs
-const consultorioCarouselImgs = document.querySelectorAll('.consultorio___container___items___carousel___imgs > img');
+const consultorioCarouselImgs = document.querySelectorAll('.consultorio___container___items___carousel___imgs > img');//
 const consultorioCarouselContainer = document.querySelector('.consultorio___container___items___carousel___imgs');
+
+//Header carousel
+const headerCarousel = document.querySelector('.header___img');
 
 
 //Ajuste para altura de pixels para onde o link interno vai para
@@ -212,30 +215,22 @@ setInterval(function(){
 
 }, 1500)
 
+
+//carousel
 let counter = 1;
 setInterval(() =>{
 
     if(counter === 3) counter = 0;
 
+    headerCarousel.style.transform=`translateX(${-100*counter}vw)`;
+
     if(this.document.documentElement.clientWidth > 1100){   
         consultorioCarouselContainer.style.transform=`translateX(${-680*counter}px)`;
-        counter++;
     }
     else if(this.document.documentElement.clientWidth <= 1100){   
         consultorioCarouselContainer.style.transform=`translateX(${-100*counter}vw)`;
-        counter++;
     }
 
-},3000)
+    counter++;
 
-
-
-//carousel 
-
-//criar um vetor com todas as imgs 
-
-//fzer com q 2 imgs tenham seus tranforms: translateX alterados
-
-
-//frase de efeito
-//frase não tão efetiva
+},4000)

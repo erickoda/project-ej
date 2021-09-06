@@ -1,6 +1,7 @@
 .header{
 
     height: 100vh;
+    overflow: hidden;
     //width:  100%;
     //background-image: url(../img/consultorio.jpg);
 
@@ -100,13 +101,14 @@
         }
     }
 
-
+    
     //img central do inicio da página
     &___img{
 
         display: flex;
-        //width: 300%;
-        overflow: hidden;
+        width: 300%;
+        transition: all 2s ease-in-out;
+        //transform: translateX(-800px);
 
         &___container{
     
@@ -115,7 +117,6 @@
             //left: 0;
             height: 100vh;
             width: 100vw;
-            overflow: hidden;
 
             display: flex;
             align-items: center;
@@ -151,24 +152,21 @@
     background-image: url(../img/consultorio.jpg);
     background-blend-mode: color;
     background-color: $transparent-semidark-gray;
-    //transform: translateX(100px);
-    //background-size: cover;
+    background-size: cover;
 }
 
 #slide-2{
     background-image: url(../img/consultorio2.jpg);
     background-blend-mode: color;
     background-color: $transparent-semidark-gray;
-    //transform: translateX(1920px);
-    //background-size: cover;
+    background-size: cover;
 }
 
 #slide-3{
     background-image: url(../img/consultorio3.jpg);
     background-blend-mode: darken;
     background-color: $transparent-semidark-gray;
-    //transform: translateX(1920*2px);
-    //background-size: cover;
+    background-size: cover;
 }
 
 .hamburger___menu{
@@ -178,7 +176,7 @@
     right: 0;
     margin: 0 5vw;
     background-color: white;
-    padding: 2.5rem 0 2.5rem 0;
+    padding: 2.5rem 0;
     border-radius: 1.25rem; 
 
     display: flex;
@@ -187,20 +185,16 @@
     flex-direction: column;
     align-items: center;
 
-    transition: 0.5s;
+    transition: 0.5s ease-out;
 
     z-index: 2;
 
+    //whatsapp btn
     &___button{
         > img{
             height: 3rem;
-            //padding: 0.9375rem;
-            //background-color: $green;
-            //border-radius: 30%;
-             filter: brightness(5%);
+            filter: brightness(10%);
         }
-
-        //transition: height 0.3s;
     }
 
     > a{
