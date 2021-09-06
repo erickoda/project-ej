@@ -181,7 +181,7 @@ window.addEventListener('scroll', function(){
 
     }
     //Animação Localização texto mobile
-    else if(window.scrollY > 4200 && this.document.documentElement.clientWidth <= 1100){
+    else if(window.scrollY > 3600 && this.document.documentElement.clientWidth <= 1100){
         textMapa.classList.add('rotate-in');
         textMapa.classList.remove('rotate-out');
 
