@@ -5,45 +5,12 @@
     transform: translateX(0);
 }
 
-/*@keyframes animate-in{
-    from{
-        visibility: hidden;
-    }
-
-    1%{
-        visibility: visible;
-        opacity: 0%;
-    }
-
-    to{
-        visibility: visible;
-        opacity: 100%;
-    }
-
-}*/
-
 //hamburger animation out
 .animate-out{
     visibility: hidden;
     opacity: 0%;
     transform: translateX(100vw);
 }
-
-/*@keyframes animate-out{
-    from{
-        visibility: visible;
-        opacity: 100%;
-    }
-
-    99%{
-        visibility: visible;
-    }
-
-    to{
-        visibility: hidden;
-        opacity: 0%;
-    }
-}*/
 
 //navbar bg
 .background-in{
@@ -83,7 +50,6 @@
 }
 
 //sobre parágrafo.
-//sobre-int-p-ul
 .rotate-in{
     transform: rotateY(0);
     opacity: 100%;
@@ -91,7 +57,6 @@
 }
 
 //sobre parágrafo
-//sobre-out-p-ul
 .rotate-out{
     transform: rotateY(90deg);
     opacity: 0%;
@@ -122,10 +87,6 @@
 
 
 //hamburger btn animation
-.hamburger-btn-open{
-
-}
-
 .hamburger-btn-close-span-1-down{
     transform: translateY(9px) rotateZ(45deg);
 }
@@ -136,9 +97,4 @@
 
 .hamburger-btn-close-span-3-up{
     transform: translateY(-9px) rotateZ(-45deg);
-}
-
-.consultorio-carousel{
-    transform: translateX(-680px);
-    transition: 1s ease-in-out;
 }

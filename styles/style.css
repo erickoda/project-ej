@@ -5,22 +5,6 @@
           transform: translateX(0);
 }
 
-/*@keyframes animate-in{
-    from{
-        visibility: hidden;
-    }
-
-    1%{
-        visibility: visible;
-        opacity: 0%;
-    }
-
-    to{
-        visibility: visible;
-        opacity: 100%;
-    }
-
-}*/
 .animate-out {
   visibility: hidden;
   opacity: 0%;
@@ -28,21 +12,6 @@
           transform: translateX(100vw);
 }
 
-/*@keyframes animate-out{
-    from{
-        visibility: visible;
-        opacity: 100%;
-    }
-
-    99%{
-        visibility: visible;
-    }
-
-    to{
-        visibility: hidden;
-        opacity: 0%;
-    }
-}*/
 .background-in {
   background-color: #70c7d4;
   -webkit-backface-visibility: visible;
@@ -130,13 +99,6 @@
 .hamburger-btn-close-span-3-up {
   -webkit-transform: translateY(-9px) rotateZ(-45deg);
           transform: translateY(-9px) rotateZ(-45deg);
-}
-
-.consultorio-carousel {
-  -webkit-transform: translateX(-680px);
-          transform: translateX(-680px);
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
 }
 
 *, *::before, *::after {
